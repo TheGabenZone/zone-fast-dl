@@ -37540,6 +37540,11 @@ Repurposed by: 'Majro'"
 					"attribute_class"	"apply_z_velocity_on_damage"
 					"value"				"275"
 				}
+				"keep disguise"
+				{
+					"attribute_class"		"set_keep_disguise"
+					"value" 				"1"
+				}
 			}
 			"visuals"
 			{
