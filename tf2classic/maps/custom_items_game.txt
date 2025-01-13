@@ -37533,12 +37533,12 @@ Repurposed by: 'Majro'"
 				"damage force increase hidden"													// Negative propulsive force generally means this sends you in the direction you were looking!
 				{
 					"attribute_class"	"mult_dmgself_push_force"
-					"value" 			"-1.75"
+					"value" 			"-2"
 				}
 				"strange restriction type 3"													// Enough lift-off force on taking damage to get you off the ground, even if you use it from a standstill
 				{
 					"attribute_class"	"apply_z_velocity_on_damage"
-					"value"				"210"
+					"value"				"275"
 				}
 			}
 			"visuals"
