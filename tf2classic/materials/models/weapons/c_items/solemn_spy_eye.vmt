@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\c_items\solemn_spy_eye"
+//	"$Envmap"             "models/player/shared/eye-reflection-cubemap-"  
+	"$lightwarptexture"   "models/player/shared/eye_lightwarp"     
+
+//	"$halflambert" "1"
+	"$nodecal" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

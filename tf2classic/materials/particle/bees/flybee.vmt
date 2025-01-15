@@ -1,0 +1,16 @@
+"Spritecard"
+{
+	"$basetexture" "particle\bees\tinybee"
+	"$frame" "2"
+
+   "Proxies"
+   {
+      "AnimatedTexture"
+      {
+         "animatedtexturevar" "$basetexture"
+         "animatedtextureframenumvar" "$frame"
+         "animatedtextureframerate" 24
+      }
+   }
+	
+}

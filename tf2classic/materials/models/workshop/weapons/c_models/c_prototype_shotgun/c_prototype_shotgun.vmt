@@ -1,4 +1,4 @@
-"SDK_VertexlitGeneric"
+"VertexlitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_prototype_shotgun/c_prototype_shotgun"
 	"$envmap" "env_cubemap"

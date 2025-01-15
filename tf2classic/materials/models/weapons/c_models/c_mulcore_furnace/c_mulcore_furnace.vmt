@@ -1,0 +1,64 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/weapons/c_models/c_mulcore_furnace/c_mulcore_furnace"
+	"$phongexponenttexture" "models/weapons/c_models/c_mulcore_furnace/c_mulcore_furnace_exp"
+	"$bumpmap" "models/weapons/c_models/c_mulcore_furnace/c_mulcore_furnace_nrm"
+	"$phong" "1"
+	"$phongexponentfactor" "255"
+	"$phongboost" ".6"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[.3 .5 3]"
+	"$halflambert" "1"
+	"$glowcolor" "1"
+//	"$phongwarptexture"  "models/weapons/c_models/c_ambassador/c_ambassador_phongwarp"
+	"$envmap" "cubemaps/cubemap_sheen001"
+	"$envmaptint" ".8 .8 .8"
+	"$phongalbedotint" "1"
+//	"$basemapalphaphongmask" "1"
+
+	"$detail" "models/weapons/c_models/c_mulcore_furnace/c_mulcore_furnace_emit_red"
+	"$detailscale" "1"
+	"$detailblendmode" "5"
+	"$detailblendfactor" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "1"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}
