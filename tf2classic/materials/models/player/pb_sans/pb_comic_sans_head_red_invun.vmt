@@ -1,9 +1,0 @@
-"Patch"
-{
-	include "materials\models\player\shared\red_invun.vmt"
-	
-	insert
-	{
-	"$basetexture" "models/player/pb_sans/pb_comic_sans_head_red"
-	}
-}
