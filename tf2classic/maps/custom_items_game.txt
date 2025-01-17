@@ -495,11 +495,6 @@
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"sticky_arm_time_penalty"
-					"value"				"2"
-				}
 			}
 		}
 		"21"
