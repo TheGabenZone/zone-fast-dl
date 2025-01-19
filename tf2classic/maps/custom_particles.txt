@@ -35,4 +35,6 @@ particles_manifest
 	file	"particles/pancake_particles.pcf"
 	file	"particles/energy_ball.pcf"
 	file	"particles/fireball_test.pcf"
+	file    "!particles/orion_cannon.pcf"
+	file    "!particles/d3_bullet_tracers.pcf"
 }
