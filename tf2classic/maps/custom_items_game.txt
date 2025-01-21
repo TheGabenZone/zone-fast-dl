@@ -33732,7 +33732,7 @@ Weapon By: 'The One Of Wonders'"
 		    "name"						"TF_WEAPON_BACKPACK_AIRSTRIKE"
 			"prefab"				    "weapon_rocketlauncher"
 			"item_class"                "tf_weapon_tranq"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0" //Disabled for Rework/Nerf
 			"anim_slot"					"melee"
 			"item_slot"                 "secondary"
 			"bucket"                    "1"
@@ -48575,162 +48575,112 @@ Stats by: 'Panáček'"
 			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
 //-------------------------------------
-// WHITE PHOSPHOROUS
+// WHITE PHOSPHOROUS - reworked
 //-------------------------------------	
 		"10126"
 		{
-		    "name"						"TF_WEAPON_WHITE_PHOSPHORUS"
-			"prefab"				    "weapon_rocketlauncher"
-			"item_class"                "tf_weapon_tranq"
+			"name"						"TF_WEAPON_FRAG"
+			"item_class"				"tf_weapon_grenade_mirv"
+			"prefab"					"medieval_base use_pyro"
 			"show_in_armory"			"1"
-			"anim_slot"					"melee"
-			
-			"item_name"					"White Phosphorus"
-			"item_type_name"			"Level 100 War Crime"
-			"item_description"			"
-'Do you feel like a hero yet?'
-
-Model by: 'svdl, andicraft'
-Original Weapon by: 'The One of Wonders'
-Remade by: 'Panáček'"
-			"item_logname"				"white lies"
-			"item_iconname"				"white lies"							
-			"image_inventory"			"backpack/weapons/w_models/w_whitelies"
-			"model_world"				"models/weapons/c_models/c_speaker_pack/c_speaker_pack_microphone.mdl"
-			"model_player"				"models/weapons/c_models/c_speaker_pack/c_speaker_pack_microphone.mdl"
-			"attach_to_hands"			"1"
-			"used_by_classes"
+			"tags"
 			{
-				"soldier"				"1"
+				"can_deal_gib_damage"					"1"
+				"can_deal_damage"						"1"
+				"can_deal_critical_damage"				"1"
+				"can_deal_long_distance_damage"			"1"
 			}
-			"static_attrs"																		
+			
+			"item_type_name"			"#TF_Weapon_Grenade"
+			"propername"				"1"
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"Willy Pete"
+			"item_description"			"Ammo pickups do not give ammo
+This weapon can ignite other Pyros.
+
+One Time Usage: Can only be re-acquired by the Resupply Locker.
+
+Model from: Pre-Fortress 2 - prefortress.com
+Animations by: 'Fence'
+Idea by: 'Sevan'
+Weapon by: 'TheGabenZone'"
+			"item_slot"					"secondary"
+			"anim_slot"					"melee"
+			"item_logname"				"Frag Grenade"
+			"item_iconname"				"Frag Grenade"
+			"image_inventory"			"backpack/weapons/w_models/w_grenade_frag"
+			
+			"model_world"				"models/weapons/w_models/w_grenade_frag.mdl"
+			"model_player"				"models/weapons/v_models/v_grenade_frag_new.mdl"
+
+			"static_attrs"
 			{
-				"override projectile type"              "2"
-				"class select override vcd"				"taunt03_v3"
+				"min_viewmodel_offset"					"10 0 -10"
+				"custom projectile model"				"models/weapons/w_models/w_grenade_frag.mdl"
+				"fire rate bonus hidden"				"1.33"
+				"Set DamageType Ignite"                 "1"
+				"no damage falloff over distance"		"1"
+				"centerfire projectile"					"1"
+				"bomblets count mod mult hidden"        "0"
+				"meter_label"                           "GRENADE"
 			}
 			"attributes"
 			{
-				"white lies unique"
+				"Caber Toss Positive"
 				{
-					"attribute_class"	"display_only"
+					"attribute_class"	"DISPLAY_ONLY"
 					"value"				"1"
 				}
-				"white lies unique cont"
-				{
-					"attribute_class"	"display_only"
-					"value"				"1"
-				}
-				"white lies positive"
-				{
-					"attribute_class"	"display_only"
-					"value"				"1"
-				}
-				"hidden separator"		"1"
-
-			    "weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"				"12.0"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"1.5"
-				}
-				"weapon_stattrak_module_scale"
+				"Blast radius increased"
 				{
 					"attribute_class"	"mult_explosion_radius"
-					"value"				"1.25"
+					"value"				"2"
 				}
-				"strange restriction type 1"
+				"damage penalty hidden"
 				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"0.8"
+					"attribute_class"	"mult_dmg"
+					"value"				"0.9"
 				}
-			    "custom projectile origin offset"
+				"minicrits vs class"
 				{
-					"attribute_class"	"custom_projectile_origin_offset"
-					"value"				"400 3 400"
-				}
-				"strange restriction type 1"
-				{
-					"attribute_class"	"mod_rocket_gravity"
-					"value"				"20"
-				}
-				"energy weapon no ammo" 
-				{
-					"attribute_class"	"energy_weapon_no_ammo"
-					"value"				"1"
-				}
-				"Set DamageType Ignite"												
-				{
-					"attribute_class"	"set_dmgtype_ignite"
-					"value" 			"1"
-				}
-				"weapon burn dmg increased"
-				{
-					"attribute_class"	"mult_wpn_burndmg"
-					"value" 			"2"
-				}
-				"weapon burn time increased"
-				{
-					"attribute_class"	"mult_wpn_burntime"
-					"value" 			"5"
-				}
-			    "crits vs class"
-				{
-					"attribute_class"	"crit_vs_class"
+					"attribute_class"	"minicrit_vs_class"
 					"value"				"512"
 				}
-                "crit mod disabled"
-                {
-                    "attribute_class"	"mult_crit_chance"
-                    "value"				"0"
-                }
-                "mod use custom ammo type"
+				"crit mod disabled"
 				{
-					"attribute_class"	"mod_use_custom_ammo_type"
-					"value" 			"5"
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
 				}
-				"reload time increased hidden"	
-				{
-					"attribute_class"	"mult_reload_time"
-					"value"				"5"
-				}
-                "weapon_stattrak_module_scale"
-                {
-                    "attribute_class"	"mult_maxammo_grenades2"
-                    "value"				"69.0"
-                }
 				"weapon_stattrak_module_scale"
-                {
-                    "attribute_class"	"mult_dmg"
-                    "value"				"6.5"
-                }
-				"mod ammo per reload"
 				{
-					"attribute_class"	"mod_ammo_per_reload"						
-					"value"				"11"
+					"attribute_class"	"stickybomb_charge_rate"
+					"value" 			"1.6"
 				}
-				"custom projectile model"
+				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"custom_projectile_model"
-					"value"				"models/weapons/c_models/c_speaker_pack/w_rocket_airstrike_backpack.mdl"
+					"attribute_class"	"effectbar_recharge_rate"
+					"value" 			"99"
+				}
+				"strange restriction type 1"
+				{
+					"attribute_class"	"custom_burn_pyro"
+					"value"				"1"													
 				}
 			}
 			"visuals"
 			{
-				"sound_single_shot"		"Weapon_ArtilleryPack.Fire"
-				"sound_burst"			"Weapon_ArtilleryPack.FireCrit"	
+				"sound_single_shot"		"Weapon_Grenade_Mirv.Throw"
+				"sound_double_shot"		"Weapon_Grenade_Mirv.ChargeUp"
+				"sound_reload"			"Weapon_StickyBombLauncher.WorldReload"
+				"sound_special1"		"Weapon_Grenade_Mirv.Explode"
+				"sound_special2"		"Player.UseDeny"
+				"sound_special3"		"Weapon_StickyBombLauncher.ModeSwitch"
+				"sound_burst"			"Weapon_Grenade_Mirv.ThrowCrit"
 				"trail_effect"          "flamethrower"
 				"explosion_effect"		"white_phosphorous"
-				"player_bodygroups"
-				{
-					"hat"				"1"
-				}
 			}
-			"mouse_pressed_sound"		"#ui/item_default_pickup.wav"
-			"drop_sound"				"#ui/item_default_drop.wav"
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
 		}
 // ------------------------------------------------------------------------------------ //
 // Knockout Custom Weapons v6.0
