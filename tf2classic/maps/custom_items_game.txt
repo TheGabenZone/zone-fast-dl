@@ -1454,7 +1454,7 @@ Rework by: 'TheGabenZone'"
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
-					"value"				"111 1.25"
+					"value"				"121 1.25"
 				}
 				"add condition on hit"
 				{
