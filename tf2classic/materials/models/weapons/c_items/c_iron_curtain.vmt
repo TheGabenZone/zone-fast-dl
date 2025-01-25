@@ -1,8 +1,10 @@
-"SDK_VertexLitGeneric"
+"VertexLitGeneric"
 {
 	"$basetexture" "models/weapons/c_items/c_iron_curtain"
-	"$basemapalphaphongmask" "1"
-//	"$bumpmap" 	   "models/weapons/w_minigun/w_minigun01_phongmask"
+ 	"$selfillum" "1"
+    	"$selfillummask" 	   "models/weapons/c_items/c_iron_curtain_illum"
+	"$bumpmap" 	   "models/weapons/c_items/c_iron_curtain_normal"
+
 	
 	"$phong" "1"
 	"$phongexponent" "15"

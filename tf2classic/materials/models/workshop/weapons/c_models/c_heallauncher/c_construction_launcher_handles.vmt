@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/workshop/weapons/c_models/c_heallauncher/c_construction_launcher"
+	"$basetexture" "models/workshop/weapons/c_models/c_construction_launcher/c_construction_launcher"
 	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"

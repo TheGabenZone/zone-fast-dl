@@ -1,8 +1,8 @@
 "VertexlitGeneric"
 {
-	"$baseTexture" "models\weapons\c_items\c_spetsnazsub/subsun"
+	"$baseTexture" "models\weapons\c_items/subsun"
 	"$selfillum" "1"
-	"$bumpmap" "models\weapons\c_items\c_spetsnazsub/subsun_normal"
+	"$bumpmap" "models/weapons/c_items/subsun_normal"
 	"$phong" "1"
 	"$phongexponent" "55"
 	"$phongboost" "1"	
