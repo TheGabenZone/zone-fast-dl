@@ -16060,7 +16060,7 @@ Edited by: 'Reagy'"
 			"prefab"                    "weapon_umbrella"
 			"item_class"                "tf_weapon_fists"
 			"item_type_name"			"#TF_Weapon_Fists"
-			"show_in_armory"            "1"
+			"show_in_armory"            "0"
 			"item_description"			"
 Utility weapon: Cannot give minicrit boosts
 Deals 'normal' melee damage
@@ -18213,7 +18213,7 @@ Weapon by: 'Vror'"
 			}
 			"name"						"TF_WEAPON_CIV_PISTOL_HEAL"							
 			"item_class"				"tf_weapon_paintballrifle"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			
 			"item_name_color"           "190 200 233 255"
 			
@@ -27115,7 +27115,7 @@ Weapon by: 'The One Of Wonders'"
         {
 		    "name"						"TF_WEAPON_ANTITANK_RIFLE" // it's back~
 			"prefab"					"weapon_sniperrifle"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 
 			"item_name_color"           "190 200 233 255"
 
@@ -33390,7 +33390,7 @@ Weapon by: 'The One Of Wonders'"
 			}
 		    "name"						"TF_WEAPON_MEDIC_MINIGUN"				
 			"item_class"				"tf_weapon_paintballrifle"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"                 "secondary"
 			"anim_slot"                 "secondary"
 
@@ -35346,7 +35346,7 @@ Weapon by: 'Reagy, The One Of Wonders'"
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_logname"				"Sharpshooter"
 			"item_iconname"				"Sharpshooter"
 			"item_description"			"Alt-Fire: Spin the Sharpshooter for increased damage and bullet richochet
