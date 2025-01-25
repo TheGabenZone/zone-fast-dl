@@ -14622,7 +14622,7 @@ Weapon by: 'Reagy'"
 		{
 			"name"						"TF_WEAPON_FIGHTMAKER"							
 			"item_class"                "tf_weapon_shotgun_soldier"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"anim_slot"					"primary"
 			"item_slot"					"secondary"
 			
