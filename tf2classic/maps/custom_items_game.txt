@@ -2140,7 +2140,7 @@ Weapon by: 'The One Of Wonders'"
 		"3341"
 		{
 		    "name"						"TF_WEAPON_SNIPER_BURSTRIFLE"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_class"                "tf_weapon_pistol"
 			"bucket"                    "0"
 			"bucket_position"           "0"
@@ -4482,7 +4482,7 @@ Weapon by: 'The One Of Wonders'"
 		{
             "name"						"TF_WEAPON_SMG_BURST_SNIPER"
 			"prefab"					"weapon_smg"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 
 			"propername"				"0"
 			"item_name"					"Great Divider"
@@ -5398,7 +5398,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 		    "name"						"TF_WEAPON_DRUMSHOT_HEAVY"
 			"prefab"					"weapon_shotgun"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"secondary"
 			"anim_slot"                 "secondary"
 			"item_class"				"tf_weapon_shotgun_hwg"
@@ -6996,7 +6996,7 @@ Weapon by: 'The One Of Wonders'"
 			"item_class"				"tf_weapon_smg"
 			"bucket"					"0"														
 			"bucket_position"			"0"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"                 "primary"
 			"anim_slot"                 "primary"
 
@@ -8684,11 +8684,6 @@ Weapon by: 'The One Of Wonders'"
 				{
 					"attribute_class"		"add_civ_boost_enemies"
 					"value" 				"1"
-				}	
-				"strange restriction type 1"
-				{
-					"attribute_class"	"mod_health_regen_hurt_delay"
-					"value"				"5"
 				}
 			}
 			"visuals"
@@ -10190,7 +10185,7 @@ Item by: 'The One Of Wonders'"
         {
 		    "name"						"TF_WEAPON_POWERARMOR_DEFENSIVE"
 			"prefab"					"weapon_minigun"
-			"show_in_armory"			"1"	
+			"show_in_armory"			"0"	
 			
 			"item_name_color"           "190 200 233 255"
 		
@@ -11317,7 +11312,7 @@ Weapon by: 'Vror'"
 		    "name"						"TF_WEAPON_FIREARM_REMASTER"
 			"prefab"					"weapon_shotgun"
             "item_class"                "tf_weapon_smg"			
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"primary"
 			"anim_slot"                 "secondary"
 			"bucket"                    "0"
@@ -14167,7 +14162,7 @@ Weapon by: 'The One Of Wonders'"
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			
 			"item_name"					"Solar Carbonizer"
 			"item_type_name"			"Plasma-Ion Projection Shotgun"
@@ -15063,7 +15058,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_SYRINGEGUN_HEAVY"
 			"prefab"					"weapon_syringegun"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 
 			"item_name_color"           "190 200 233 255"
 
@@ -15523,9 +15518,14 @@ Reworked by:'Unconventional Healing Tactics'"
 			"item_name"					"Backhand" 										
 			"item_type_name"			"Rude Gesture" 													
 			"item_description"			"
+Primary fire: Launch an enemy backwards or reflect projectiles (5 second cooldown).
+
+Alt-Fire: Give mini-crit boost to a teammate
+
 Buenos dias, mercenaries!
 
-Weapon by: 'Majro'"													
+Weapon by: 'Majro'
+Rework by: 'Rhynx'"													
 			"item_logname"				"Backhand"												
 			"item_iconname"				"Backhand"												
 			"image_inventory"			"backpack/weapons/v_models/v_shove/v_shove" 						
@@ -15540,51 +15540,82 @@ Weapon by: 'Majro'"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -7"
+				"melee range multiplier"				"1.5"							
+				"melee bounds multiplier"				"1.33"
 			}
 			
 			"attributes"																		
 			{
-				"mod_melee_dont_deflect_projectiles"
+				"deflect on swing"
 				{
-					"attribute_class"	"mod_melee_dont_deflect_projectiles"
+					"attribute_class"	"deflect_on_swing"
 					"value"				"1"
 				}
 
+				"deflect on smack hidden"
+				{
+					"attribute_class"	"deflect_on_smack"
+					"value"				"1"
+				}
+
+				"airblast no players"
+				{
+					"attribute_class"	"disable_airblasting_players"
+					"value"				"1"
+				}
+				
 				"fishwhacker sweep"
 				{
 					"attribute_class"	"deflect_on_smack_hit_player"
 					"value"				"1"
 				}
-			    "civ boost cond override"
+
+				"strange restriction type 3"													
 				{
-					"attribute_class"	"add_civ_boost_override"
-					"value" 			"112 1.25" 
+					"attribute_class"	"apply_z_velocity_on_damage"
+					"value"				"150"
 				}
+
+			    "Medical Administration Defense"
+				{
+					"attribute_class"	"dmmuy"
+					"value" 			"5"
+				}
+
+			    "move speed bonus"
+				{
+					"attribute_class"		"mult_player_movespeed"
+					"value" 				"1.20"
+				}
+
+				"add condition on hit"												
+				{
+					"attribute_class"	"add_onhit_addcond_self_weapon"
+					"value"				"111 5"
+				}	
+			
 				"crit from behind"
 				{
 					"attribute_class"	"crit_from_behind"
 					"value"				"1"
 				}			
-			    "strange restriction type 1"
-				{
-					"attribute_class"		"mult_player_movespeed"
-					"value" 				"20"
-				}	
+
 			    "civ boost aura override"
 				{
 					"attribute_class"		"add_civ_aura_override"
 					"value" 				"50"
-				}	
+				}
+	
 				"decrease player capture value"
 				{
 					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-2"
+					"value" 				"-1"
 				}			
 				
-				"fire rate penalty"
+			    "strange restriction type 1"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"				"1.5"
+					"value"				"5"
 				}
 						
 				"crit mod disabled"															
@@ -15598,25 +15629,8 @@ Weapon by: 'Majro'"
 					"attribute_class"	"hidden_separator"
 					"value"				"1"
 				}				
-			
-				//Turns out this used the same values like the Clean Sweep. How convenient.		
 		
-				"deflection size multiplier"
-				{
-					"attribute_class"	"deflection_size_multiplier"
-					"value"				"0.25"
-				}
-				
-				"deflection size multiplier"
-				{
-					"attribute_class"	"mult_airblast_pushback_scale"
-					"value"				"1"
-				}
-                "strange restriction type 1"
-				{
-					"attribute_class"	"mod_health_regen_hurt_delay"
-					"value"				"5"
-				}				
+                				
 			}	
 			"visuals"																			
 			{
@@ -16524,7 +16538,7 @@ Weapon by: 'The One Of Wonders'"
 		    "name"						"TF_WEAPON_SPACEPISTOL_SOLAR"
             "prefab"                    "weapon_umbrella"
 			"item_class"				"tf_weapon_pistol"
-            "show_in_armory"			"1"
+            "show_in_armory"			"0"
 			"anim_slot"                 "secondary"
 			
 			"image_inventory_size_w"	"128"
@@ -18197,7 +18211,7 @@ Reworked by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_SYRINGEGUN_SUPER"
 			"prefab"					"weapon_syringegun"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 
 			"propername"				"0"
 			
@@ -23801,7 +23815,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 		    "name"						"TF_WEAPON_NAILGUN_BURSTFIRE"
 			"item_class"				"tf_weapon_nailgun"									
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"primary"
 			"anim_slot"					"secondary"
 
@@ -24173,7 +24187,7 @@ Wearable by: 'Reagy'"
 		{
 		    "name"						"TF_WEAPON_NAILGUN_BURSTFIRE_CIV"
 			"item_class"				"tf_weapon_nailgun"									
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"melee"
 			"anim_slot"					"secondary"
 
@@ -27789,7 +27803,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_CARDS"							
 			"item_class"				"tf_weapon_grenadelauncher"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			
 			"item_slot"					"primary"
 			"anim_slot"					"melee"
@@ -28153,7 +28167,7 @@ Weapon by: 'The One Of Wonders' 'Reagy'"
 		{
 			"name"						"TF_WEARABLE_AUGMENTATION_MECHANIST"									
 			"item_class"				"tf_weapon_smg"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"primary"
 
 			"equip_region"				"hat"												
@@ -31088,7 +31102,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 		    "name"						"TF_WEAPON_DEMO_CROWDCONTROL_BOMBSUIT"							
 			"item_class"				"tf_weapon_grenadelauncher"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			
 			"item_slot"                 "primary"
 			"anim_slot"                 "Primary"
@@ -32396,7 +32410,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 		    "name"						"TF_WEAPON_NEUTRONIUM_BISECTOR"
 			"item_class"				"tf_weapon_scattergun"								
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"primary"
 			"anim_slot"					"primary"
 			
@@ -35689,7 +35703,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_SHOWERBURST_FLAMETHROWER"
 			"prefab"					"weapon_flamethrower"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"primary"
 			"anim_slot"                 "primary"
 			"item_class"				"tf_weapon_scattergun"
@@ -38017,8 +38031,193 @@ Weapon by: 'Reagy'"
 			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
 			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
 		}
+
 // ------------------------------- //
-// THE ZONE Custom Weapons v1.0 - weapons to be added later
+// Knockout.chat Custom Weapons Old
+// ------------------------------- //
+
+//----------------------
+//----------------------
+//--Fly spy- 9216--- --REMOVED, FOR REAL THIS TIME
+//					 --"No coffin can contain me!" -Spy //Majro
+//----------------------
+//----------------------
+		"20000"
+		{
+			"name"						"TF_SPY_FLY_REDUX" //'cause it is.
+			
+			"show_in_armory"			"1"
+			"propername"				"1"
+			
+			"item_logname"				"spy_fly"
+			"item_iconname"				"what" //This should deal 0 damage, so yeah.
+			
+			"item_class"				"tf_weapon_grenade_mirv2" //Make sure this has NO CONFLICTS!
+
+			"item_name"					"Fly-By"
+			"bucket"					"4"
+			
+			"item_description"			"Fires a short-duration blast that launches the Spy in the direction they are aiming.
+
+Spy, Fly, or Die trying.
+
+Cosmetic by: 'Pie_Tony' 'Tabby'
+Item by: Majro"
+			"item_type_name"			"Rocket Pack"
+			"item_slot"					"pda2"
+			"anim_slot"					"melee"
+			
+			"image_inventory"			"backpack/workshop/player/items/pyro/furious_flyer_mk2/furious_flyer_mk2"
+			"model_world"				"models/player/items/engineer/flyboy_new.mdl"
+			"model_player"				"models/weapons/v_models/v_rocketpack_pyro.mdl"
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/engineer/flyboy_new.mdl"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -6"
+				"override projectile type" 				"1"
+				"meter_label"							"JETPACK" //For some reason "tf_weapon_throwable" doesn't show this meter
+			}
+			"attributes"
+			{
+				"keep disguise" //Just imagine a Heavy gracefully flying through the air. Whee!
+				{
+					"attribute_class"	"set_keep_disguise"
+					"value"				"1"
+				}
+				
+				"cannot refill meter ammo DISPLAY ONLY" //Custom attribute, couldn't find anything similar
+				{
+					"attribute_class"	"mod_cannot_refill_meter_ammo"
+					"value"				"1"
+				}
+				
+				"hidden separator"
+				{
+					"attribute_class"	"hidden_separator"
+					"value"				"1"
+				}
+				
+				
+				"effect bar recharge rate increased" //This is, like, 5 seconds? Is this too fast?
+				{
+					"attribute_class"	"effectbar_recharge_rate"
+					"value"				"0.5"
+				}
+				"maxammo grenades2 increased" //One blast felt underwhelming compared to the cloak.
+				{
+					"attribute_class"	"mult_maxammo_grenades2"
+					"value"				"2"
+				}
+	
+				"mod use custom ammo type" //MIRV 2 ammo. Again, make sure there's no conflicts.
+				{
+					"attribute_class"	"mod_use_custom_ammo_type"
+					"value"				"5"
+				}
+				
+				"stickybomb charge rate"
+				{
+					"attribute_class"	"stickybomb_charge_rate"
+					"value"				"0"
+				}				
+				
+				
+				"apply self knockback hidden" //A decently strong knockback. UNLIKE LAST TIME.
+				{
+					"attribute_class"	"apply_self_knockback"
+					"value"				"-500"
+				}
+				"Projectile range increased"
+				{
+					"attribute_class"	"mult_projectile_range"
+					"value"				"0.001"
+				}
+				"centerfire projectile"	
+				{
+					"attribute_class"	"centerfire_projectile"
+					"value"				"1"
+				}
+				
+				
+				//VISUALS
+				
+				"explosive bullets"	//Because particles.
+				{
+					"attribute_class"	"explosive_bullets"
+					"value"				"1"
+				}
+				
+				"damage force increase hidden" //Which means all this stuff just for a puff of smoke. Blech.
+				{
+					"attribute_class"	"mult_dmgself_push_force"
+					"value" 			"0.0"
+				}
+				
+				"damage penalty hidden"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.0"
+				}
+				
+				
+				"hide extra wearable on active" //Only used to show up in loadout. Not to be used by sane people.
+				{
+					"attribute_class"	"hide_extra_wearable_active"
+					"value"				"1"
+				}
+				
+				
+				//DIDN'T WORK OUT
+				//Meant to let the blast knock others around, but it kept affecting Spy too
+				
+				//"Blast radius decreased"
+				//{
+				//	"attribute_class"	"mult_explosion_radius"
+				//	"value"				"0.75"
+				//}
+				
+				//"apply z velocity on damage"
+				//{
+				//	"attribute_class"	"apply_z_velocity_on_damage"
+				//	"value"				"350"
+				//}
+				
+				//"no self blast dmg"
+				//{
+				//	"attribute_class"	"no_self_blast_dmg"
+				//	"value" 			"1"
+				//}
+
+			}			
+			"visuals"
+			{				
+				"sound_single_shot"		"Spy.Smoke"
+				"sound_burst"    		"Spy.Smoke"
+				"sound_reload"			"Weapon_Null"
+				"sound_special1"		"Building_JumpPad.Launch"
+				
+
+				"explosion_effect"		"snow_steppuff_mist" //Looks very exhaust-y and steamy.
+				
+				"animation_replacement" //No melee animations on my watch!
+				{
+					"ACT_MP_ATTACK_STAND_MELEE"				"ACT_MP_JUMP_LAND_melee"
+					"ACT_MP_ATTACK_CROUCH_MELEE"			"ACT_MP_JUMP_LAND_melee"
+					"ACT_MP_ATTACK_SWIM_MELEE"				"ACT_MP_JUMP_LAND_melee"
+				}
+
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"			
+		}
+
+// ------------------------------- //
+// THE ZONE Custom Weapons v1.0
 // ------------------------------- //
 
 //-----------------------
@@ -38027,7 +38226,7 @@ Weapon by: 'Reagy'"
 //-----------------------
 //-----------------------
 
-		"10000"	
+		"30000"
 		{
 			"name"						"TF_WEAPON_HEAVY_REVOLVER"
 			"prefab"					"weapon_revolver"

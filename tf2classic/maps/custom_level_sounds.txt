@@ -17777,3 +17777,19 @@
 	"pitch"		"92, 98"
 	"wave"		")weapons/nuke_explode.wav"
 }
+
+// ------------------------------------------------------------------------------------ //
+// FLY SPY
+// ------------------------------------------------------------------------------------ //
+
+"Spy.Smoke"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_94dB"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"			"player/spy_smoke.wav" //What is this sound for? I have no idea.
+	}
+}
