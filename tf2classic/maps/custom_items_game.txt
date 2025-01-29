@@ -1389,80 +1389,6 @@ Rework by: 'Rhynx'"
 			"mouse_pressed_sound"		"#ui/item_pack_pickup.wav"
 			"drop_sound"				"#ui/item_pack_drop.wav"
 		}
-		"57"
-		{
-			"name"						"Anchor"
-			"item_class"				"tf_weapon_anchor"
-            "show_in_armory"			"1"
-			"item_name"					"#TF_Weapon_Anchor"
-			"item_type_name"			"#TF_Weapon_Anchor_Type"
-			"item_description"			"#TF_Weapon_Anchor_Desc"
-			"item_slot"					"melee"
-			"anim_slot"					"melee"
-			"item_logname"				"anchor"
-			"item_iconname"				"anchor"
-			"image_inventory"			"backpack/weapons/w_models/w_anchor"
-			"model_world"				"models/weapons/w_models/w_anchor.mdl"
-			"model_player"				"models/weapons/v_models/v_anchor_soldier.mdl"
-			"attach_to_hands"			"2"
-			"extra_wearable"			"models/player/items/anchor_wearable.mdl"
-			"extra_wearable_bodygroup_toggle_on_active" "anchor"
-			"used_by_classes"
-			{
-				"soldier"				"1"
-				"demoman"               "1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"8 0 -6"
-				"meter_label"							"#TF_Airtime"
-			}
-			"attributes"
-			{
-				"anchor earthquake"
-				{
-					"attribute_class"	"earthquake_attack_active"
-					"value"				"192.0 0.0 4.0"
-				}
-				"earthquake attack mins"
-				{
-					"attribute_class"	"earthquake_attack_mins"
-					"value"				"30.0 64.0"
-				}
-				"take crits from projectile airborne simple"
-				{
-					"attribute_class"	"take_crits_projectile_airborne_simple"
-					"value"				"256"
-				}
-				"take crits from projectile during blast jump anchor"
-				{
-					"attribute_class"	"take_crits_projectile_blast_jump"
-					"value"				"1"
-				}
-				"gravity mod active increased"
-				{
-					"attribute_class"	"gravity_mod_active"
-					"value"				"1.3"
-                }
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
-				}
-				"extra wearable bodygroup toggle active"
-				{
-					"attribute_class"	"extra_wearable_bodygroup_toggle_active"
-					"value"				"anchor"
-				}
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value"				"1"
-				}
-			}
-			"mouse_pressed_sound"		"weapons/melee_anchor_itemselection.wav"
-			"drop_sound"				"weapons/melee_anchor_itemselection_drop.wav"
-		}
 		"53"
 		{
 			"name"						"Harvester"
@@ -1610,6 +1536,87 @@ Rework by: 'Rhynx'"
 			}
 			"mouse_pressed_sound"		"#ui/item_wood_pole_pickup.wav"
 			"drop_sound"				"#ui/item_wood_pole_drop.wav"
+		}
+		"59"
+		{
+			"name"						"Cyclops"
+			"item_class"				"tf_weapon_cyclops"
+			"show_in_armory"			"1"
+			"item_name"					"#TF_Weapon_Cyclops"
+			"item_type_name"			"#TF_Weapon_Cyclops_Type"
+			"item_description"			"#TF_Weapon_Cyclops_Desc"
+			"item_slot"					"primary"
+			"anim_slot"					"secondary"
+			"item_logname"				"cyclops"
+			"item_iconname"				"cyclops"
+			"propername"				"1"
+			"image_inventory"			"backpack/weapons/w_models/w_cyclops"
+			"model_world"				"models/weapons/w_models/w_cyclops.mdl"
+			"model_player"				"models/weapons/v_models/v_cyclops_demoman.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"class select override vcd"				"class_select_cyclops"
+			}
+			"attributes"
+			{
+				"cyclops prevent fuse explain"
+				{
+					"attribute_class"		"VISUALONLY"
+					"value"					"1"
+				}
+				"cyclops detonate other grenades"
+				{
+					"attribute_class"		"cyclops_detonate_other_grenades"
+					"value"					"1"
+				}
+				"Blast radius decreased"
+				{
+					"attribute_class"		"mult_explosion_radius"
+					"value"					"0.9"
+				}	
+				"clip size penalty"
+				{
+					"attribute_class"		"mult_clipsize"
+					"value"					"0.25"
+				}
+				
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				
+				"hidden separator"			"1"
+
+				"rocket jump damage reduction weapon"
+				{
+					"attribute_class"		"rocket_jump_dmg_reduction_weapon"
+					"value"					"0.75"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"		"set_scattergun_no_reload_single"
+					"value"					"1"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_MP_RELOAD_STAND_SECONDARY"				"ACT_MP_RELOAD_STAND_CYCLOPS"
+					"ACT_MP_RELOAD_CROUCH_SECONDARY"				"ACT_MP_RELOAD_CROUCH_CYCLOPS"
+					"ACT_MP_RELOAD_SWIM_SECONDARY"				"ACT_MP_RELOAD_SWIM_CYCLOPS"
+					"ACT_MP_RELOAD_AIRWALK_SECONDARY"				"ACT_MP_RELOAD_AIRWALK_CYCLOPS"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_emp_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 
 //--------------------------------
@@ -19557,7 +19564,7 @@ Weapon by: 'The One Of Wonders'"
 		    "name"						"TF_WEAPON_ARTILLERY_LAUNCHER"
             "prefab"					"weapon_grenade_launcher"
 			"item_class"                "tf_weapon_rocketlauncher"
-            "show_in_armory"			"1"
+            "show_in_armory"			"0"
 			"anim_slot"                 "secondary"
 			"item_slot"                 "secondary"
 			"bucket"                    "1"
@@ -38505,6 +38512,297 @@ Modification by: 'Rhynx'"
 			"mouse_pressed_sound"		"#items/pickup_medium.wav"
 			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
+		
+//---------------------------
+//---------------------------
+//--CIV TROMBONE - 20003 --
+//---------------------------
+//---------------------------
+		"20003"
+		{
+		    "tags"
+			{
+				"bots_cant_use"			"1"														
+			}
+		    "name"						"TF_WEAPON_CIV_AIRBLAST"
+			"prefab"					"weapon_umbrella"
+			"item_class"				"tf_weapon_flamethrower"							
+			"show_in_armory"			"1"
+
+			"item_name"					"Blowhard"
+			"item_type_name"			"Musical Instrument"
+			//"propername"				"0"			//Better with "The" or not? You decide.
+			"item_name_color"           "190 200 233 255"
+			
+			"item_logname"				"Blowhard"
+			"item_iconname"				"Blowhard"
+			
+			"item_description"			"Alt-Fire: Release a blast of air that pushes enemies and projectiles, and extinguishes teammates that are on fire.
+
+Primary Fire does nothing.
+
+Model by: 'Codenator' 'FiveEyes'
+Item by: 'Majro'"		
+
+
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"image_inventory"			"backpack/weapons/w_models/w_fumblers_fanfare_civ"
+			"model_world"				"models/weapons/w_models/w_fumblers_fanfare_civ.mdl"
+			"model_player"				"models/weapons/v_models/v_fumblers_fanfare_civ.mdl"	
+			"extra_wearable"			"models/hats/civilian_magician/civilian_magician_edit.mdl"
+			"attach_to_hands"			"2"
+			
+			"used_by_classes"
+			{
+				"civilian"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -3 -10"
+			}
+			"attributes"
+			{
+			
+			    "boots falling stomp"
+				{
+					"attribute_class"	"boots_falling_stomp"
+					"value" 			"1"
+				}
+				"energy weapon no ammo"
+				{
+					"attribute_class"	"hide_ammo_hud"
+					"value"				"0"	
+				}
+
+				"apply self knockback airblast"		//Experimented a bit with the values, this should be okay.
+				{
+					"attribute_class"	"apply_self_knockback_airblast"
+					"value"				"375"
+				}
+
+				"fire rate penalty"				//Imagine Civ being able to spam as hard as Pyro, bleh.
+				{
+					"attribute_class"	"mult_airblast_refire_time"
+					"value"				"1.5"
+				}
+				
+				"civ boost aura override"
+				{
+					"attribute_class"		"add_civ_aura_override"
+					"value" 				"50"
+				}
+				
+				"hidden separator"
+				{
+					"attribute_class"	"hidden_separator"
+					"value"				"1"
+				}
+				
+                "weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0"	
+				}
+				
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"500"	
+				}
+				
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_wpn_burndmg"
+					"value"				"0"	
+				}
+				
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_wpn_burntime"
+					"value"				"0"
+				}
+				
+				"flame ammopersec decreased"		//Can't run out of ammo if you don't use any...right?
+				{
+					"attribute_class"	"mult_flame_ammopersec"
+					"value"				"0"
+				}
+				
+				"flame size penalty"				//Somehow creates flames that deal no damage. Works for me.
+				{
+					"attribute_class"	"mult_flame_size"
+					"value"				"-1000"
+				}
+				
+				"airblast cost decreased"			//If anyone ever runs out of ammo with this thing, you can bonk me.
+				{
+					"attribute_class"	"mult_airblast_cost"
+					"value"				"1"
+				}
+				
+				"disable fancy class select anim"
+				{
+					"attribute_class"	"disable_fancy_class_select_anim"
+					"value"				"1"	
+				}
+				"decrease player capture value"
+				{
+					"attribute_class"		"add_player_capturevalue"
+					"value" 				"-1"
+				}
+			}
+			"visuals"
+			{
+			
+				"animation_replacement"			//Local man goes nuclear over Flamethrower animations.
+				{
+					
+					"ACT_MP_ATTACK_STAND_MELEE"				"ACT_MP_GESTURE_VC_FISTPUMP_item1"	
+					"ACT_MP_ATTACK_STAND_PREFIRE"			"ACT_MP_GESTURE_VC_FISTPUMP_item1"	
+					"ACT_MP_ATTACK_STAND_POSTFIRE"			"ACT_MP_GESTURE_VC_FISTPUMP_item1"		
+					"ACT_MP_ATTACK_STAND_PRIMARY"			"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+
+					
+					"ACT_MP_ATTACK_CROUCH_MELEE"				"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+					"ACT_MP_ATTACK_CROUCH_PREFIRE"				"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+					"ACT_MP_ATTACK_CROUCH_POSTFIRE"				"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"				"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+					
+					"ACT_MP_ATTACK_SWIM_MELEE"						"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+					"ACT_MP_ATTACK_SWIM_PREFIRE"					"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+					"ACT_MP_ATTACK_SWIM_POSTFIRE"					"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+					"ACT_MP_ATTACK_SWIM_PRIMARY"					"ACT_MP_GESTURE_VC_FISTPUMP_item1"
+				
+				
+					"ACT_MP_ATTACK_STAND_SECONDARYFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+					"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"			"ACT_MP_GESTURE_FLINCH_CHEST"
+					"ACT_MP_ATTACK_SWIM_SECONDARYFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+					
+				}
+			"sound_reload"	"Weapon_Null"
+			"sound_special3"	"Weapon_Null"
+			"sound_special2"	"Weapon_Null"
+			"sound_special1"	"Weapon_Null"
+			"sound_single_shot"	"Weapon_Null"
+			"sound_burst"		"Weapon_Null"
+			"sound_empty"		"Weapon_Null"
+			"sound_double_shot"	 "Weapon_Trombone.AirBurstAttack"	//Look ma, extreme sound paranoia!
+			}
+
+		"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+		"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+//---------------------------
+//---------------------------
+//--DOOM civvie - 20004 --
+//---------------------------
+//---------------------------
+        "20004"																	
+        {
+ 			"name"						"TF_WEAPON_GLORY_KILL"
+			"prefab"                    "weapon_umbrella"
+			"item_class"                "tf_weapon_fists"							
+			"show_in_armory"			"1"
+			"item_quality"				"rarity3"
+
+			"propername"				"1"
+			"item_name"					"Glory Kill"
+			"item_type_name"			"Berserk Pack"
+			"item_description"			"Enemies you punch are marked for death for 5 seconds
+
+Rip and tear, lads!
+  
+Original Model and Animations from Open Fortress - openfortress.fun
+Original Weapon by: 'Reagy'
+Repurposed by: 'Majro'"
+			"item_logname"				"glorykill"
+			"item_iconname"				"glorykill"
+			"image_inventory"			"backpack/hats/doomguy"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			
+			"model_world"				"models/weapons\custom\v_models\v_berserk_fists_civ_doomguy.mdl"
+			"model_player"				"models/weapons\custom\v_models\v_berserk_fists_civ_doomguy.mdl"
+			"attach_to_hands"			"2"		
+			"used_by_classes"
+			{
+				"civilian"				"1"
+			}
+			"static_attrs"
+			{
+				"is_a_sword"							"72"								
+				"decapitate type"						"1"								
+				"melee range multiplier"				"1.25"							
+				"melee bounds multiplier"				"1.35"
+				"min_viewmodel_offset"					"8 0 -6"
+			}
+			"attributes"
+			{
+				"provide on active"													
+				{
+					"attribute_class"	"provide_on_active"
+					"value" 			"1"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.2"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" 			"0.75"
+				}
+				"critboost on kill"
+				{
+					"attribute_class"	"add_onkill_critboost_time"
+					"value"				"5"
+				}
+				"move speed bonus"															
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" 			"1.4"
+				}
+				
+				"item_meter_damage_for_full_charge"
+				{
+					"attribute_class"	"self_mark_for_death_on_miss"
+					"value"				"5.0"
+				}
+				"add condition on hit"																
+				{
+					"attribute_class"	"add_onhit_addcond"  
+					"value" 			"30 5"                   
+ 				}
+				"add condition on hit"
+				{
+					"attribute_class"	"add_onhit_addcond_self"
+					"value"				"48 5.0"
+				}
+				
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-75"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_Fist.Miss"
+				"sound_melee_hit"		"Weapon_Fist.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Fist.HitWorld"
+				"sound_burst"			"Weapon_Fist.MissCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_fists_pickup.wav"
+			"drop_sound"				"#ui/item_fists_drop.wav"
+		}
 
 // ------------------------------- //
 // THE ZONE Custom Weapons v1.0
@@ -38599,6 +38897,86 @@ Modification by: 'Rhynx'"
 				"sound_single_shot"		"Weapon_NightRevolver.Single"
 				"sound_burst"			"Weapon_NightRevolver.SingleCrit"
 			}
+		}
+		
+//-----------------------
+//-----------------------
+//-- DEMOMAN ANCHOR - 30001--
+//-----------------------
+//-----------------------
+		
+		"30001"
+		{
+			"name"						"Anchor"
+			"item_class"				"tf_weapon_anchor"
+            "show_in_armory"			"1"
+			"item_name"					"#TF_Weapon_Anchor"
+			"item_type_name"			"#TF_Weapon_Anchor_Type"
+			"item_description"			"#TF_Weapon_Anchor_Desc"
+			"item_slot"					"melee"
+			"anim_slot"					"melee"
+			"item_logname"				"anchor"
+			"item_iconname"				"anchor"
+			"image_inventory"			"backpack/weapons/w_models/w_anchor"
+			"model_world"				"models/weapons/w_models/w_anchor.mdl"
+			"model_player"				"models/weapons/v_models/v_anchor_soldier.mdl"
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/anchor_wearable.mdl"
+			"extra_wearable_bodygroup_toggle_on_active" "anchor"
+			"used_by_classes"
+			{
+				"demoman"               "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"8 0 -6"
+				"meter_label"							"#TF_Airtime"
+			}
+			"attributes"
+			{
+				"anchor earthquake"
+				{
+					"attribute_class"	"earthquake_attack_active"
+					"value"				"192.0 0.0 4.0"
+				}
+				"earthquake attack mins"
+				{
+					"attribute_class"	"earthquake_attack_mins"
+					"value"				"30.0 64.0"
+				}
+				"take crits from projectile airborne simple"
+				{
+					"attribute_class"	"take_crits_projectile_airborne_simple"
+					"value"				"256"
+				}
+				"take crits from projectile during blast jump anchor"
+				{
+					"attribute_class"	"take_crits_projectile_blast_jump"
+					"value"				"1"
+				}
+				"gravity mod active increased"
+				{
+					"attribute_class"	"gravity_mod_active"
+					"value"				"1.3"
+                }
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"extra wearable bodygroup toggle active"
+				{
+					"attribute_class"	"extra_wearable_bodygroup_toggle_active"
+					"value"				"anchor"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"		"weapons/melee_anchor_itemselection.wav"
+			"drop_sound"				"weapons/melee_anchor_itemselection_drop.wav"
 		}
 
 //--------------------------------
