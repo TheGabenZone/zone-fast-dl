@@ -37666,7 +37666,7 @@ Edited by: 'Reagy'"
 		{
 			"name"						"TF_WEAPON_CROCKETLAUNCHER"
 			"prefab"					"weapon_rocketlauncher"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"primary"
 			"anim_slot"					"primary"
 
@@ -38542,7 +38542,7 @@ Modification by: 'Rhynx'"
 Primary Fire does nothing.
 
 Model by: 'Codenator' 'FiveEyes'
-Item by: 'Majro'"		
+Item by: 'Majro'"
 
 
 			"image_inventory_size_w"	"128"
@@ -38568,11 +38568,6 @@ Item by: 'Majro'"
 				{
 					"attribute_class"	"boots_falling_stomp"
 					"value" 			"1"
-				}
-				"energy weapon no ammo"
-				{
-					"attribute_class"	"hide_ammo_hud"
-					"value"				"0"	
 				}
 
 				"apply self knockback airblast"		//Experimented a bit with the values, this should be okay.
@@ -38791,6 +38786,12 @@ Repurposed by: 'Majro'"
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
+				}
+				
+				"civ boost aura override"
+				{
+					"attribute_class"		"add_civ_aura_override"
+					"value" 				"50"
 				}
 			}
 			"visuals"
