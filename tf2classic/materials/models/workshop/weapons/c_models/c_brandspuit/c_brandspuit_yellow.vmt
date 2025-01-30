@@ -4,6 +4,6 @@
 	
 	insert
 	{
-	"$baseTexture" "models\workshop\weapons\c_models\c_brandspuit\c_brandspuit_color_blue"
+	"$baseTexture" "models\workshop\weapons\c_models\c_brandspuit\c_brandspuit_color_yellow"
 	}
 }
