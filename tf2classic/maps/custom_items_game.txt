@@ -581,45 +581,13 @@
 			"name"						"TF_WEAPON_UMBRELLA"
 			"prefab"					"weapon_umbrella"
 			"baseitem"					"1"
-			"item_description"			"
-Primary Fire: Hit an enemy backwards and mark them for death for 5 seconds
-
-Alt-Fire: Give a 10 second damage resistance boost to a teammate.
-
-'Keep yourself dry from both rain and bloodshed during your evening commute'
-
-Rework by: 'Rhynx'"
+			"item_description"			"#TF_Weapon_Umbrella_Desc"
 			"attributes"
 			{
-				"umbrella recharge rate increased"
-				{
-					"attribute_class"	"umbrella_recharge_rate"
-					"value"				"0.5"
-				}
-				"fishwhacker sweep"
-				{
-					"attribute_class"	"deflect_on_smack_hit_player"
-					"value"				"1"
-				}
-			    "move speed bonus"
-				{
-					"attribute_class"		"mult_player_movespeed"
-					"value" 				"1.2"
-				}
-				"damage penalty"
-				{
-					"attribute_class"		"mult_dmg"
-					"value" 				"0.7"
-				}
 				"decrease player capture value"
 				{
 					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-1"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"		"mult_crit_chance"
-					"value" 				"0"
+					"value" 				"-2"
 				}
 				"civ boost aura override"
 				{
@@ -629,12 +597,7 @@ Rework by: 'Rhynx'"
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
-					"value"				"111 1.25"
-				}
-				"add condition on hit"
-				{
-					"attribute_class"		"add_onhit_addcond"
-					"value" 				"30 5"
+					"value"				"112 1.25"
 				}
 			}
 		}
@@ -872,12 +835,7 @@ Rework by: 'Rhynx'"
 				{
 					"attribute_class"	"punch_angle_mod"
 					"value" 			"0.75"
-				}	
-                "strange restriction type 2"
-				{
-					"attribute_class"	"crit_dmg_falloff"
-					"value"				"1"
-				}					
+				}		
 			}
 			"visuals"
 			{
@@ -1838,7 +1796,7 @@ Weapon from: New Old Weapons Pack"
 			"prefab"					"weapon_umbrella"
 			"show_in_armory"			"1"
 
-			"item_quality"				"rarity2"
+			"item_name_color"           "190 200 233 255"
 			"item_name"					"Chef Jenkins"
 			"item_type_name"			"Special Equipment"
 			"item_description"			"
@@ -4224,6 +4182,8 @@ Weapon by: 'The One Of Wonders'"
 			"item_name"					"Titanium Torcher"
 			"item_type_name"			"Heavy Flamecaster"
 			"item_description"			"
+On Kill: Get a damage resistance and health regen buff for 5 seconds
+
 For when a regular incendiary shotgun won't cut it.
 
 Model by: 'svdl'
@@ -4254,7 +4214,17 @@ Weapon by: 'The One Of Wonders'"
 				{
 					"attribute_class"	"dmmuy"
 					"value" 			"1"
-				}				
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" 			"35"
+				}
+				"add condition on kill"
+				{
+					"attribute_class"	"add_onkill_addcond_self"							
+					"value" 			"111 5"
+				}
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
@@ -4288,12 +4258,12 @@ Weapon by: 'The One Of Wonders'"
 				"weapon burn time reduced"
 				{
 					"attribute_class"	"mult_wpn_burntime"
-					"value"				"0.5"
+					"value"				"0.25"
 				}
 				"move speed penalty"
 				{
 					"attribute_class"	"mult_player_movespeed"
-					"value" 			"0.9"
+					"value" 			"0.75"
 				}
 				"crit mod disabled"
 				{
@@ -4324,6 +4294,11 @@ Weapon by: 'The One Of Wonders'"
 				{
 					"attribute_class"	"mod_custom_falloff"
 					"value"				"2.0"
+				}
+				"Daffy Special"		
+				{
+					"attribute_class"	"dmmuy"
+					"value" 			"1"
 				}
 			}
 			"visuals"
@@ -22320,7 +22295,9 @@ Weapon by: 'The One Of Wonders'"
 			"item_name"					"Grimm Omen"
 			"item_type_name"			"Scythe"
 			"item_description"			"
-Crits against aiming players
+This weapon ignores resistances.
+
+Crits against aiming players.
 
 Reap what you sow.
 
@@ -22346,6 +22323,11 @@ Weapon by: 'The One Of Wonders'"
 				"Scythe Crit hit"
 				{
 					"attribute_class"	"dummy"
+					"value"				"1"
+				}
+				"weapon_stattrak_module_scale"															
+				{
+					"attribute_class"	"mod_pierce_resists_absorbs"
 					"value"				"1"
 				}
 				"add condition on hit"															
@@ -25179,9 +25161,9 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"dmmuy"
 					"value"				"1" 
 				}
-				"Move Speed Bonus Active"
+				"move speed bonus"
 				{
-					"attribute_class"	"mult_player_movespeed_active"
+					"attribute_class"	"mult_player_movespeed"
 					"value"				"1.15"
 				}
 				"weapon_stattrak_module_scale"
@@ -38835,7 +38817,7 @@ Weapon from: New Old Weapons Pack"						// It does the exact opposite, in fact!
 			"show_in_armory"			"1"
 			"item_slot"					"primary"
 			"anim_slot"                 "secondary"
-			"item_quality"				"rarity2"
+			"item_name_color"           "190 200 233 255"
 			
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
@@ -38892,6 +38874,11 @@ Weapon by: 'The One Of Wonders'"
 				{
 					"attribute_class"	"mod_no_dmg_falloff"
 					"value"				"1"
+				}
+				"Projectile range decreased"
+				{
+					"attribute_class"	"mult_projectile_range"
+					"value"				"0.15"
 				}
 				"voice pitch scale"
 				{
@@ -44339,6 +44326,16 @@ In Slam Fire: +60% fire rate and infinite clip"
 			"attribute_type"		"uber_decay"													
 			"description_format"	"value_is_additive"
 			"effect_type"			"negative"
+		}
+		
+		"32015"
+		{
+			"name"					"Daffy Special"
+			"description_string"	"If Daffy is in the server... run."
+			"description_format"	"value_is_additive"
+			"hidden"				"0"
+			"custom_color"			"217 33 33 25"
+			"effect_type"			"neutral"
 		}
 	}
 }
