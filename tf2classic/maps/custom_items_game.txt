@@ -38718,7 +38718,7 @@ Repurposed by: 'Majro'"
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
-					"value"				"-75"
+					"value"				"-100"
 				}
 				
 				"crit mod disabled"
