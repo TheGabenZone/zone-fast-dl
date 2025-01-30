@@ -38814,7 +38814,7 @@ Weapon from: New Old Weapons Pack"						// It does the exact opposite, in fact!
 		{
 			"name"						"TF_WEAPON_HEAVY_RIFLE"
 			"item_class"				"tf_weapon_scattergun"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_slot"					"primary"
 			"anim_slot"                 "secondary"
 			"item_name_color"           "190 200 233 255"
