@@ -4215,7 +4215,7 @@ Weapon by: 'The One Of Wonders'"
 			"image_inventory"			"backpack/weapons/c_models/c_flameshotgun/c_flameshotgun"
 			"model_world"				"models/weapons/c_models/c_flameshotgun/c_flameshotgun.mdl"
 			"model_player"				"models/weapons/v_models/v_heavyflamecaster.mdl"
-			"extra_wearable"			"models/workshop/player/items/pyro/tw2_greek_armor/tw2_greek_armor.mdl"
+			//"extra_wearable"			"models/workshop/player/items/pyro/tw2_greek_armor/tw2_greek_armor.mdl"
 			"attach_to_hands"			"2"
 			"used_by_classes"
 			{
