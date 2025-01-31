@@ -36884,7 +36884,7 @@ Weapon by: 'The One Of Wonders'"
 			"item_class"				"tf_weapon_flamethrower"
 			"equip_region"				"grenades"
 			
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_name_color"           "190 200 233 255"
 			"item_name"					"Hydro Pump"
 			"item_logname" 				"Hydro Pump"
