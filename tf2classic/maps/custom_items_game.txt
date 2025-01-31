@@ -3059,7 +3059,7 @@ Weapon by: 'The One Of Wonders'"
 				"Move Speed Penalty Active"
 				{
 					"attribute_class"	"mult_player_movespeed_active"
-					"value"				"0.7"
+					"value"				"0.8"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -3079,12 +3079,12 @@ Weapon by: 'The One Of Wonders'"
 				"strange restriction type 1"
 				{
 					"attribute_class"	"mult_spread_scale"
-					"value" 			"0.1"
+					"value" 			"0.08"
 				}
-				"strange restriction type 1"								
+				"strange restriction type 1"													
 				{
 					"attribute_class"	"mod_spread_scale_scoped_override"
-					"value"				"0"
+					"value"				"0.04"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -3104,7 +3104,7 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_player_aiming_movespeed"
-					"value" 			"0.5"
+					"value" 			"0.75"
 				}
 				"punch angle mod add hidden"
 				{
@@ -3119,7 +3119,7 @@ Weapon by: 'The One Of Wonders'"
 				"strange restriction type 1"													
 				{
 					"attribute_class"	"mod_sniper_zoom_fov_override"
-					"value"				"10"
+					"value"				"64"
 				}
 				"mod zoomed dont hide viewmodel"
 				{
@@ -4215,6 +4215,7 @@ Weapon by: 'The One Of Wonders'"
 			"image_inventory"			"backpack/weapons/c_models/c_flameshotgun/c_flameshotgun"
 			"model_world"				"models/weapons/c_models/c_flameshotgun/c_flameshotgun.mdl"
 			"model_player"				"models/weapons/v_models/v_heavyflamecaster.mdl"
+			"extra_wearable"			"models/workshop/player/items/pyro/tw2_greek_armor/tw2_greek_armor.mdl"
 			"attach_to_hands"			"2"
 			"used_by_classes"
 			{
@@ -26340,11 +26341,6 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"heal_on_smack_DISPLAY_ONLY"
 					"value"				"1"
 				}
-				"Oppressive Force"
-				{
-					"attribute_class"	"dmmuy"
-					"value"				"5"
-				}
 				"tranq on hit"
 				{
 					"attribute_class"	"mod_tranq_onhit"
@@ -38794,23 +38790,22 @@ Weapon from: 'New Old Weapons Pack"
 				"sound_reload"			"Weapon_FireHose.FireLoop"
 				"sound_special3"		"Weapon_FireHose.WindDown"
 				"sound_burst"			"Weapon_FireHose.FireLoopCrit"
-				"beam_effect"			"firehose_steam"
 			}
 			"visuals_red"
 			{
-				"beam_effect_crit"		"firehose_steam_crit_red"
+				"beam_effect"			"mediflame_red"
 			}
 			"visuals_blu"
 			{
-				"beam_effect_crit"		"firehose_steam_crit_blue"
+				"beam_effect"			"mediflame_blue"
 			}
 			"visuals_grn"
 			{
-				"beam_effect_crit"		"firehose_steam_crit_green"
+				"beam_effect"			"mediflame_green"
 			}
 			"visuals_ylw"
 			{
-				"beam_effect_crit"		"firehose_steam_crit_yellow"
+				"beam_effect"			"mediflame_yellow"
 			}
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
@@ -39232,7 +39227,7 @@ Fixed Animations by: 'Majro'"
 //			"propername"				"1"
  			"item_name_color"           "197 3 3 255"
 			"item_name"					"Grim lurker"
-			"item_type_name"			"Undead menace"
+			"item_type_name"			"Undead Menace"
 			"item_description"			"
 [KI KI KI MA MA MA.]
 
@@ -39241,8 +39236,8 @@ Cosmetics by:'Valve''Big Bob'
 Cosmetic help by:'Sevan'"
 			"item_logname"				"Grim lurker"
 			"item_iconname"				"Grim lurker"
-			"image_inventory"			"backpack/weapons/c_models/c_grim_lurker/c_grim_lurker"
-			"model_player"			    "models/player/items/custom/heavy/grim_lurker.mdl"
+			"image_inventory"			"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"model_player"			    "models/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask.mdl"
 			"used_by_classes"
 			{
 				"heavy"				"1"
