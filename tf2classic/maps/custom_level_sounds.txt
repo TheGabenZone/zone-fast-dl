@@ -17793,3 +17793,59 @@
 		"wave"			"player/spy_smoke.wav" //What is this sound for? I have no idea.
 	}
 }
+
+// ------------------------------------------------------------------------------------ //
+// JasonKnive
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_JasonKnife.Swing"
+{
+    "channel"    "CHAN_WEAPON"
+    "soundlevel"    "SNDLVL_NORM"
+    "volume"    "1.0"
+    "rndwave"
+    {
+        "wave"        ")weapons/JasonKnife_swing01.wav"
+        "wave"        ")weapons/JasonKnife_swing02.wav"
+        "wave"        ")weapons/JasonKnife_swing03.wav"
+    }
+}
+"Weapon_JasonKnife.SwingCrit"
+{
+    "channel"    "CHAN_WEAPON"
+    "soundlevel"    "SNDLVL_NORM"
+    "volume"    "1.0"
+    "wave"        ")weapons/JasonKnife_swing_crit01_musicv2.wav"
+}
+"Weapon_JasonKnife.HitFlesh"
+{
+    "channel"    "CHAN_STATIC"
+    "soundlevel"    "SNDLVL_NORM"
+    "volume"    "1.0"
+    "rndwave"
+    {
+        "wave"        ")weapons/JasonKnife_hitbod01.wav"
+        "wave"        ")weapons/JasonKnife_hitbod02.wav"
+        "wave"        ")weapons/JasonKnife_hitbod03.wav"
+        "wave"        ")weapons/JasonKnife_hitbod04.wav"
+    }
+}
+"Weapon_JasonKnife.HitWorld"
+{
+    "channel"    "CHAN_STATIC"
+    "soundlevel"    "SNDLVL_NORM"
+    "volume"    "1.0"
+    "rndwave"
+    {
+        "wave"        ")weapons/JasonKnife_hit01.wav"
+        "wave"        ")weapons/JasonKnife_hit02.wav"
+    }
+}
+"Weapon_JasonKnife.Deploy"
+{
+    "channel"    "CHAN_AUTO"
+    "soundlevel"    "SNDLVL_NORM"
+    "volume"    "1"
+    "wave"        ")weapons/JasonKnife_deploy.wav"
+
+}
