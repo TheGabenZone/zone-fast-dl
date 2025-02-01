@@ -23126,7 +23126,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/hotrod_shoot.wav"
+	"wave"		")weapons/hotrid_shoot.wav"
 }
 
 "Weapon_HotrodShotgun.SingleCrit"
