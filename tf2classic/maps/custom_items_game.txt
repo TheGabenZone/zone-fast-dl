@@ -1610,11 +1610,6 @@
 					"attribute_class"	"earthquake_attack_active"
 					"value"				"192.0 0.0 4.0"
 				}
-				"damage force reduction"
-				{
-					"attribute_class"	"damage_force_reduction"
-					"value"				"0.25"
-				}
 				"earthquake attack mins"
 				{
 					"attribute_class"	"earthquake_attack_mins"
@@ -6321,7 +6316,6 @@ Weapon by: 'The One Of Wonders'"
 			"used_by_classes"
 			{
 				"soldier"				"1"
-				"demoman"               "1"
 			}
             "attributes"
             {
@@ -11009,7 +11003,7 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.35"
+					"value"				"0.25"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -30857,7 +30851,7 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.265"
+					"value"				"0.2"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -31409,7 +31403,7 @@ Weapon by: 'The One Of Wonders'"
 			"static_attrs"																	
 			{
 				"override projectile type" 				"1"		//hitscan								
-				"damage bonus hidden"					"1.95"																									
+				"damage bonus hidden"					"2.22222222"																									
 			}
 			"attributes"
 			{
@@ -39371,11 +39365,6 @@ Rework by: 'Rhynx'"
 					"attribute_class"	"earthquake_attack_active"
 					"value"				"192.0 0.0 4.0"
 				}
-				"damage force reduction"
-				{
-					"attribute_class"	"damage_force_reduction"
-					"value"				"0.25"
-				}
 				"earthquake attack mins"
 				{
 					"attribute_class"	"earthquake_attack_mins"
@@ -39929,6 +39918,7 @@ Weapon from: ReValve Pack"
 			"static_attrs"
 			{
 				"max health additive bonus"				"25"
+				"health regen"                          "4"
 			}
 			"attributes"
 			{
@@ -40153,11 +40143,6 @@ Weapon from: ReValve Pack"
 			}
 			"attributes"
 			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"1.15"
-				}
 				"mod full-throttle unique attr 1"						// Conflicts
 				{
 					"attribute_class"	"DISPLAY_ONLY"
@@ -40182,6 +40167,11 @@ Weapon from: ReValve Pack"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.67"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
 				}
 				// Backend stuff
 				"hide_attrib_percentage"
