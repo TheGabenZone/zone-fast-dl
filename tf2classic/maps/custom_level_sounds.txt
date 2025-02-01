@@ -17815,7 +17815,7 @@
     "channel"    "CHAN_WEAPON"
     "soundlevel"    "SNDLVL_NORM"
     "volume"    "1.0"
-    "wave"        ")weapons/JasonKnife_swing_crit01_musicv2.wav"
+    "wave"        ")weapons/JasonKnife_swing_crit01_music.wav"
 }
 "Weapon_JasonKnife.HitFlesh"
 {

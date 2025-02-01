@@ -2103,7 +2103,7 @@ Weapon by: 'The One Of Wonders'"
 		"3341"
 		{
 		    "name"						"TF_WEAPON_SNIPER_BURSTRIFLE"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_class"                "tf_weapon_pistol"
 			"bucket"                    "0"
 			"bucket_position"           "0"
@@ -4485,7 +4485,7 @@ Weapon by: 'The One Of Wonders'"
 		{
             "name"						"TF_WEAPON_SMG_BURST_SNIPER"
 			"prefab"					"weapon_smg"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 
 			"propername"				"0"
 			"item_name"					"Great Divider"
@@ -5401,7 +5401,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 		    "name"						"TF_WEAPON_DRUMSHOT_HEAVY"
 			"prefab"					"weapon_shotgun"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"secondary"
 			"anim_slot"                 "secondary"
 			"item_class"				"tf_weapon_shotgun_hwg"
@@ -6999,7 +6999,7 @@ Weapon by: 'The One Of Wonders'"
 			"item_class"				"tf_weapon_smg"
 			"bucket"					"0"														
 			"bucket_position"			"0"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"                 "primary"
 			"anim_slot"                 "primary"
 
@@ -11318,7 +11318,7 @@ Weapon by: 'Vror'"
 		    "name"						"TF_WEAPON_FIREARM_REMASTER"
 			"prefab"					"weapon_shotgun"
             "item_class"                "tf_weapon_smg"			
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"primary"
 			"anim_slot"                 "secondary"
 			"bucket"                    "0"
@@ -14168,7 +14168,7 @@ Weapon by: 'The One Of Wonders'"
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			
 			"item_name"					"Solar Carbonizer"
 			"item_type_name"			"Plasma-Ion Projection Shotgun"
@@ -14708,7 +14708,7 @@ Weapon by: 'Reagy'"
 		{
 			"name"						"TF_WEAPON_FIGHTMAKER"							
 			"item_class"                "tf_weapon_shotgun_soldier"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"anim_slot"					"primary"
 			"item_slot"					"secondary"
 			
@@ -15064,7 +15064,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_SYRINGEGUN_HEAVY"
 			"prefab"					"weapon_syringegun"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 
 			"item_name_color"           "190 200 233 255"
 
@@ -16544,7 +16544,7 @@ Weapon by: 'The One Of Wonders'"
 		    "name"						"TF_WEAPON_SPACEPISTOL_SOLAR"
             "prefab"                    "weapon_umbrella"
 			"item_class"				"tf_weapon_pistol"
-            "show_in_armory"			"0"
+            "show_in_armory"			"1"
 			"anim_slot"                 "secondary"
 			
 			"image_inventory_size_w"	"128"
@@ -18217,7 +18217,7 @@ Reworked by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_SYRINGEGUN_SUPER"
 			"prefab"					"weapon_syringegun"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 
 			"propername"				"0"
 			
@@ -23828,7 +23828,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 		    "name"						"TF_WEAPON_NAILGUN_BURSTFIRE"
 			"item_class"				"tf_weapon_nailgun"									
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"primary"
 			"anim_slot"					"secondary"
 
@@ -24200,7 +24200,7 @@ Wearable by: 'Reagy'"
 		{
 		    "name"						"TF_WEAPON_NAILGUN_BURSTFIRE_CIV"
 			"item_class"				"tf_weapon_nailgun"									
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"melee"
 			"anim_slot"					"secondary"
 
@@ -26311,7 +26311,6 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_DEFIBRILLATOR"
 			"prefab"					"weapon_bonesaw"
-			"item_class"                "tf_weapon_taser"
 			"show_in_armory"			"1"
 
 			"propername"				"0"
@@ -26319,11 +26318,14 @@ Weapon by: 'The One Of Wonders'"
 			"item_name_color"           "190 200 233 255"
 			"item_name"					"Heart Stopper"
 			"item_type_name"			"Portable Defibrillator"
-			"item_description"			"
+			"item_description"			"Has an 8 second cooldown on swing.
+
+
 Just because it can save your life doesn't mean it can't KILL YOU.
 
 Model by: 'BANG!'
-Weapon by: 'The One Of Wonders'"
+Weapon by: 'The One Of Wonders'
+Rework by: 'Rhynx'"
 			"item_logname"				"Heart Stopper"
 			"item_iconname"				"Heart Stopper"
 			"image_inventory"			"backpack/weapons/c_models/c_defibrillator/c_defibrillator"
@@ -26336,41 +26338,49 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-				"heal on smack DISPLAY ONLY DEFIB"
+
+				"provide on active"															
 				{
-					"attribute_class"	"heal_on_smack_DISPLAY_ONLY"
-					"value"				"1"
+					"attribute_class"	"provide_on_active"
+					"value" 			"1"
 				}
+
 				"tranq on hit"
 				{
 					"attribute_class"	"mod_tranq_onhit"
-					"value"				"3.0"
+					"value"				"5.0"
 				}
+
 				"Targets Outlined on Hit"																
 				{
 					"attribute_class"	"outline_on_hit"
 					"value"				"5"
 				}
-				"heal rate penalty"
+
+				"strange restriction type 1"
 				{
-					"attribute_class"	"mult_medigun_healrate"
-					"value"				"0.85"
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"10"
 				}
+
+				"single wep holster time increased text fix" /// holster penalty text
+				{
+					"attribute_class"	"display_only"
+					"value" 			"1.5"
+				}
+
+				"strange restriction type 1"
+				{
+					"attribute_class"	"mult_deploy_time"
+					"value" 			"1.5"
+				}
+
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"2.0"
-				}
-				"mult taser heal scale"
-				{
-					"attribute_class"	"mult_taser_heal_scale"
-					"value"				"0.75"
-				}
+
 			}
 			"visuals"
 			{
@@ -27806,7 +27816,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_CARDS"							
 			"item_class"				"tf_weapon_grenadelauncher"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			
 			"item_slot"					"primary"
 			"anim_slot"					"melee"
@@ -28170,7 +28180,7 @@ Weapon by: 'The One Of Wonders' 'Reagy'"
 		{
 			"name"						"TF_WEARABLE_AUGMENTATION_MECHANIST"									
 			"item_class"				"tf_weapon_smg"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"primary"
 
 			"equip_region"				"hat"												
@@ -31105,7 +31115,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 		    "name"						"TF_WEAPON_DEMO_CROWDCONTROL_BOMBSUIT"							
 			"item_class"				"tf_weapon_grenadelauncher"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			
 			"item_slot"                 "primary"
 			"anim_slot"                 "Primary"
@@ -32408,7 +32418,7 @@ Weapon by: 'The One Of Wonders, Vror'"
 		{
 		    "name"						"TF_WEAPON_NEUTRONIUM_BISECTOR"
 			"item_class"				"tf_weapon_scattergun"								
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"primary"
 			"anim_slot"					"primary"
 			
@@ -34588,7 +34598,7 @@ Weapon by: 'Reagy'"
 		"9931"
 		{
 			"name"						"TF_WEAPON_TWIG_MEDIC"
-			"prefab"					"weapon_bonesaw"			
+			"prefab"					"weapon_umbrella"			
 			"show_in_armory"			"1"
 
 			"propername"				"0"
@@ -34596,10 +34606,13 @@ Weapon by: 'Reagy'"
 			"item_name"			        "Festive Twig"
 			"item_type_name"			"Wooden Branch"
 			"item_description"			"
+Alt-fire: Boost a teammate with damage resistance for 10 seconds (20 second cooldown)
+
 Oh ho ho!
 
 Model by: 'Reagy' 'Agent Melon'
-Weapon by: 'Reagy'"
+Weapon by: 'Reagy'
+Rework by: 'Rhynx'"
 			"item_logname"				"Festive Twig (Medic)"
 			"item_iconname"				"Festive Twig (Medic)"
 			"image_inventory"			"backpack/weapons/c_models/c_twigbells/c_twigbells"
@@ -34616,26 +34629,61 @@ Weapon by: 'Reagy'"
 			}
 			"attributes"
 			{
-				"provide on active"
-				{
-					"attribute_class"	"provide_on_active"
-					"value" 			"1"
-				}
+
 				"drop health pack on kill" 
 				{
 					"attribute_class"	"drop_health_pack_on_kill"
 					"value"				"1"
 				}
+
+				"health from packs increased"													
+				{
+					"attribute_class"	"mult_health_frompacks"
+					"value"				"2.0"
+				}
+
+				"fire rate bonus"
+				{
+					"attribute_class"	"display_only"
+					"value"				"0.62"
+				}
+
 				"damage penalty" 
 				{
-					"attribute_class"	"mult_dmg"
-					"value"				"0.95"
+					"attribute_class"	"display_only"
+					"value"				"0.46"
 				}
+
+				"health drain"
+				{
+					"attribute_class"	"add_health_regen"
+					"value"				"-6" 
+				}
+				
+				"heal rate penalty"													
+				{
+					"attribute_class"	"mult_medigun_healrate"
+					"value"				"0.85"
+				}
+
 				"allowed in medieval mode"
 				{
 					"attribute_class"	"allowed_in_medieval_mode"
 					"value"				"1"
 				}
+
+				"civ boost cond override"													
+				{
+					"attribute_class"	"add_civ_boost_override"
+					"value"				"111 1.25"
+				}
+
+				"weapon_stattrak_module_scale"											
+				{
+					"attribute_class"	"umbrella_recharge_rate"
+					"value" 			"1.34"
+				}
+	
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
@@ -35701,7 +35749,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_SHOWERBURST_FLAMETHROWER"
 			"prefab"					"weapon_flamethrower"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"primary"
 			"anim_slot"                 "primary"
 			"item_class"				"tf_weapon_scattergun"
@@ -38939,6 +38987,173 @@ Weapon by: 'The One Of Wonders'"
 				"trail_effect_crit"		"fatbullet_medium_trail_crit_blue"
 			}	
 		}
+		
+//-------------------------------------
+//-------------------------------------
+// Escapist Shoes 
+//-------------------------------------
+//-------------------------------------		
+		"20007"
+		{
+		    "name"						"TF_WEARABLE_FUGITIVE_BOOTS"	
+			"item_class"				"tf_weapon_grenade_mirv" 
+			"show_in_armory"			"1"
+			"item_slot"					"primary"										
+			"anim_slot"					"melee"
+			"bucket"					"0"														
+			"bucket_position"			"0"
+			"equip_region"				"feet"	
+			
+			"item_name_color"           "190 200 233 255"
+			
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"propername"				"0"
+
+			"item_name"					"Forensic Fugitive"
+			"item_type_name"			"Jury-Rigged Boots"
+			"item_description"			"
+Escape plan: Primary fire activates 2 second speed boost when near enemies (10 second cooldown)
+
+Ze enemies won't catch me when I have my Jays on!
+
+Model by: 'Mr.Pink, Indever'
+Wearable by: 'The One Of Wonders'
+Weapon by 'The One Of Wonders'
+Rework by: 'Rhynx'"
+            "item_logname"				"Forensic Fugitive"
+			"item_iconname"				"Forensic Fugitive"
+			"image_inventory"			"backpack/weapons/c_models/c_escapist_shoes/c_escapist_shoes"
+			"model_player"				"models/weapons/custom/v_models/v_berserk_fists.mdl"
+			"model_world"			    "models/player/items/medic/escapist_shoes/escapist_shoes_medic.mdl"
+			"extra_wearable"			"models/player/items/medic/escapist_shoes/escapist_shoes_medic.mdl"
+			"attach_to_hands"			"2"
+			"drop_type"					"none"
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"taunt03_v2"
+                "meter_label"							"ESCAPE"						
+			}
+			"attributes"
+			{
+			    "provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value"				"1.0"
+				}
+
+				"anti gravity boots"															
+				{
+					"attribute_class"	"anti_gravity_boots"
+					"value"				"1"
+				}	
+			    "gravity mod wearer reduced"
+				{
+					"attribute_class"	"gravity_mod_wearer"
+					"value"				".4"
+				}
+                "add condition on hit"															
+				{
+					"attribute_class"	"add_onhit_addcond_self_weapon"
+					"value"				"32 2"
+				}
+				"decreased jump height"
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"				"0.5"
+				}
+				"dmg taken from blast direct increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions_direct"
+					"value"				"1.25"
+				}
+				"centerfire projectile"													
+				{
+					"attribute_class"	"centerfire_projectile"
+					"value"				"1"
+				}
+				"armor footsteps"																
+				{
+					"attribute_class"	"mod_armor_footsteps"
+					"value"				"2"
+				}
+				"hand scale"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"2"													
+				}
+				"rocket limited lifetime"
+				{
+					"attribute_class"	"rocket_lifetime"
+					"value"				"0.00001"												
+				}
+				"weapon_stattrak_module_scale"													
+				{
+					"attribute_class"	"blast_dmg_to_self"
+					"value"				"0"
+				}
+				"weapon_stattrak_module_scale"													
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.001"
+				}
+				"override projectile type"				
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2"
+				}	
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"blast_dmg_to_self"
+					"value" 			"0"														// Obviously necessary
+				}
+				"damage force increase hidden"													// Negative propulsive force generally means this sends you in the direction you were looking!
+				{
+					"attribute_class"	"mult_dmgself_push_force"
+					"value" 			"0"
+				}
+				"strange restriction type 3"													// Enough lift-off force on taking damage to get you off the ground, even if you use it from a standstill
+				{
+					"attribute_class"	"apply_z_velocity_on_damage"
+					"value"				"100"
+				}
+				"mod use custom ammo type" 
+				{
+					"attribute_class"	"mod_use_custom_ammo_type"
+					"value" 			"5"
+				}		
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_RPG_FC.Single"
+				"sound_burst"			"Weapon_RPG_FC.SingleCrit"
+				"sound_special1"		"Weapon_RPG_BlackBox.Explode"	
+				"explosion_effect"      "taunt_pyro_flip_land"
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_MELEE"				"ACT_MP_ATTACK_STAND_GRENADE"
+					"ACT_MP_ATTACK_CROUCH_MELEE"			"ACT_MP_ATTACK_STAND_GRENADE"
+					"ACT_MP_ATTACK_SWIM_MELEE"				"ACT_MP_ATTACK_STAND_GRENADE"
+
+					"ACT_MP_STAND_MELEE"					"ACT_MP_STAND_LOSERSTATE"			
+					"ACT_MP_CROUCH_MELEE"					"ACT_MP_CROUCH_LOSERSTATE"
+					"ACT_MP_SWIM_MELEE"						"ACT_MP_SWIM_LOSERSTATE"
+					"ACT_MP_RUN_MELEE"						"ACT_MP_RUN_LOSERSTATE"
+
+					"ACT_MP_JUMP_START_MELEE"				"ACT_MP_JUMP_START_LOSERSTATE"
+					"ACT_MP_JUMP_FLOAT_MELEE"				"ACT_MP_JUMP_FLOAT_LOSERSTATE"
+					"ACT_MP_JUMP_END_MELEE"					"ACT_MP_JUMP_END_LOSERSTATE"
+					"ACT_MP_AIRWALK_MELEE"					"ACT_MP_AIRWALK_LOSERSTATE"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_pack_pickup.wav"
+			"drop_sound"				"#ui/item_pack_drop.wav"
+		}
 
 
 // ------------------------------- //
@@ -39458,11 +39673,282 @@ Audio and model hack by: 'Player First Games', 'Sevan'"
 			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
 			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
 		}
+	
+//-----------------------------
+//-----------------------------
+//-- Close Encounter -- 30005 ----
+//-----------------------------
+//-----------------------------
+
+		"30005"
+		{
+			"name"						"TF_WEAPON_CLOSE_ENCOUNTER"
+			"prefab"					"weapon_shotgun"								
+			"show_in_armory"			"0"
+			"item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"Close Encounter"
+			"item_type_name"			"#TF_Weapon_Shotgun"
+			"item_description"			"
+I like to keep this handy For close encounters!"
+			"item_logname"				"broken_steel_soldier"
+			"item_iconname"				""
+			"image_inventory"			"backpack\weapons\w_models\w_marine_shotgun\w_marine_shotgun"
+			"model_world"				"models\w_models\w_marine_shotgun.mdl"
+			"model_player"				"models\v_models\v_marine_shotgun_soldier.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+			}
+			"attributes"
+			{
+				"rampup bonus"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"2"
+				}
+				"hide_attrib_additive"
+				{
+					"attribute_class"	"mod_custom_rampup"
+					"value"				"2.50"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.90"
+				}
+				"instant reload on kill"
+				{
+					"attribute_class"	"instant_reload_on_kill"
+					"value"				"3"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.85"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.5"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.25"
+				}	
+				"hide_attrib_percentage"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"				"0.80"
+				}			
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Marine_Shotgun.Single"
+				"sound_burst"			"Weapon_Marine_Shotgun.SingleCrit"
+			}
+			"mouse_pressed_sound"		"#ui/shotgun_alt_pickup_stock.wav"
+			"drop_sound"				"#ui/shotgun_alt_drop_stock.wav"
+		}
+		
+//---------------------------
+//---------------------------
+//-- HIDE AND SEEK - 30006 --
+//---------------------------
+//---------------------------
+		"30006"
+		{
+			"name"						"TF_WEAPON_SPEEDWATCH"
+			"prefab"					"weapon_invis"
+			"show_in_armory"			"0"
+			"item_name_color"           "190 200 233 255"
+
+			"item_name"					"Hide-n-Seek"
+			"item_type_name"			"Smoke Watches"
+			"item_description"			"Watches Perk: Smoke Cloak
+
+This will be the last time you see me"
+			"image_inventory"			"backpack\weapons\w_models\v_hidenseek\v_hidenseek"
+			"model_player"				"models\weapons\v_models\v_radar_watches_spy.mdl"
+			"attach_to_hands"			"0"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"static_attrs"
+			{
+				"smoke bomb on full cloak"				"1"
+				"move speed bonus while cloaked"		"1.25"
+				"mult cloak meter consume rate"			"2.0"
+				"mod min cloak to activate"				"100"
+				"cannot pickup ammo packs while cloaked"	"1"
+				"set watch panel"						"0"										// No watch panel
+			}
+			"visuals"
+			{
+				//"sound_special1"		"Player.Spy_SmokeCloak"									// Not plays for client, and special1 is reserved for explosion sounds
+			}
+			"mouse_pressed_sound"		"#ui/item_watch_pickup.wav"
+			"drop_sound"				"#ui/item_watch_drop.wav"
+		}
+	
+//-------------------------
+//-------------------------
+//-- Armor for snoiper ----
+//-------------------------
+//-------------------------
+		"30007"
+		{
+			"tags"
+			{
+//				"bots_cant_use"			"1"
+			}
+			"name"						"TF_WEARABLE_SHIELD_TIDETURNER"
+			"item_class"				"tf_wearable"
+			"show_in_armory"			"0"
+			"item_slot"					"primary"
+			"equip_region"				"vest"
+
+			"anim_slot"					"FORCE_NOT_USED"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"propername"				"1"
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"Rusher's Vest"
+			"item_type_name"			"Vest"
+			"item_description"			"Alt-Fire: Rush toward your enemies! (5s)
+You're doing everything faster, but you are marked for death
+
+I am the King of Australia!"
+			"item_logname"				"rusher_vest"
+			"item_iconname"				""
+			"image_inventory"			"backpack\player\w_sniper_vest\w_sniper_vest"
+			"model_player"				"models\player\items\sniper\w_sniper_vest\w_sniper_vest.mdl"
+			"used_by_classes"
+			{
+				"sniper"				"1"
+			}
+			"loadondemand"				"1"
+			"act_as_wearable"			"1"
+			"static_attrs"
+			{
+				"max health additive bonus"				"25"
+			}
+			"attributes"
+			{
+				"maxammo secondary increased"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"				"2"
+				}
+				"wearable add cond on right click"
+				{
+					"attribute_class"	"add_wearable_cond_on_secondary_attack"
+					"value"				"121 5 15"
+				}
+				"wearable cond on effect percent"
+				{
+					"attribute_class"	"add_wearable_cond_on_effect_percent"
+					"value"				"30 0.99"
+				}
+				"dmg taken from bullets reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_bullets"
+					"value"				"0.85"
+				}
+				"damage force increase text"
+				{
+					"attribute_class"	"damage_force_reduction"
+					"value"				"1.5"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_bag_pickup.wav"
+			"drop_sound"				"#ui/item_bag_drop.wav"
+		}
+		
+//-------------------------
+//-------------------------
+//-- Bomb Suit ------------
+//-------------------------
+//-------------------------
+		"30008"
+		{
+			"tags"
+			{
+//				"bots_cant_use"			"1"
+			}
+			"name"						"TF_WEARABLE_BOMB_SUIT"
+			"item_class"				"tf_wearable"
+			"show_in_armory"			"0"
+			"item_slot"					"secondary"
+			"equip_region"				"vest"
+
+			"anim_slot"					"FORCE_NOT_USED"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"propername"				"1"
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"Blast Blocker"
+			"item_type_name"			"Bomb Suit"
+			"item_description"			"
+I'm not afraid of explosives!"
+			"item_logname"				"blast_blocker"
+			"item_iconname"				""											// Kill icon for blast-proof suit?
+			"image_inventory"			"backpack\player\w_blast_blocker\w_blast_blocker"
+			"model_player"				"models\player\items\demo\w_demosuit.mdl"
+//			"extra_wearable"			"models\player\items\demo\spr18_frag_proof_fragger.mdl"					// For wearables you not able to add extra wearable :(
+			"used_by_classes"
+			{
+				"demoman"				"1"
+			}
+			"loadondemand"				"1"
+			"act_as_wearable"			"1"
+			"static_attrs"
+			{
+				"armor footsteps"						"0"			// No customisation for foorsteps :(
+			}
+			"attributes"
+			{
+				"dmg taken from blast splash reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions_splash"
+					"value"				"0.5"
+				}
+				"dmg taken from blast direct reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions_direct"
+					"value"				"0.75"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"0.90"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"vest"				"1"
+					"hat"				"1"
+					"grenades"			"1"
+					"collar"			"1"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_helmet_pickup.wav"
+			"drop_sound"				"#ui/item_helmet_drop.wav"
+		}
 	}
 	
 	"attributes"
 	{
-// Knockout Custom Attributes
+		// Knockout Custom Attributes
 		"7499"
 		{
 			"name"	 "dmg resistance"
