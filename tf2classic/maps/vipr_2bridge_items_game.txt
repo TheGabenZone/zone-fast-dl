@@ -8593,11 +8593,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"dmmuy"
 					"value"				"-50"
 				}
-				"decrease player capture value"
-				{
-					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-2"
-				}
+				
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
@@ -16178,11 +16174,7 @@ Edited by: 'Reagy'"
 					"attribute_class"		"dmmuy"
 					"value" 				"1"
 				}
-                "decrease player capture value"
-				{
-					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-2"
-				}				
+                				
 			}
 			"visuals"																
 			{
@@ -16598,11 +16590,7 @@ Reworked by: 'TheGabenZone'"
 					"value" 				"1.5"
 				}
 	
-				"decrease player capture value"
-				{
-					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-2"
-				}	
+					
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
@@ -18220,11 +18208,7 @@ Edited by: 'The One Of Wonders'"
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"5.0"
 				}
-				"decrease player capture value"
-				{
-					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-4"
-				}
+				
 				"strange restriction type 1"
 				{
 					"attribute_class"	"unimplemented_mod_sniper_no_charge" // How do I aim?
@@ -34728,11 +34712,7 @@ Weapon by: 'Reagy'"
 					"attribute_class"		"mult_player_movespeed"
 					"value" 				"20"
 				}
-				"decrease player capture value"
-				{
-					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-2"
-				}	
+					
 				"damage penalty" 
 				{
 					"attribute_class"	"mult_dmg"
@@ -35222,11 +35202,6 @@ Weapon by: 'Reagy, The One Of Wonders'"
 					"attribute_class"		"mult_explosion_radius"
 					"value" 				"0.1"
 				}					
-				"decrease player capture value"
-				{
-					"attribute_class"		"add_player_capturevalue"
-					"value" 				"-1"
-				}
 				"strange restriction type 1"
 				{
 					"attribute_class"	"mult_player_movespeed"
