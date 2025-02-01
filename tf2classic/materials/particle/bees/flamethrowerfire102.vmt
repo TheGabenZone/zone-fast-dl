@@ -1,0 +1,18 @@
+"unlitgeneric"
+{
+
+	"$basetexture" "particle\bees\tinybee2"
+	"$frame" "2"
+	"$translucent" 1
+
+   "Proxies"
+   {
+      "AnimatedTexture"
+      {
+         "animatedtexturevar" "$basetexture"
+         "animatedtextureframenumvar" "$frame"
+         "animatedtextureframerate" 24
+      }
+   }
+	
+}

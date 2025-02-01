@@ -1,0 +1,114 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/workshop/weapons/c_models/c_needlesaw/c_needlesaw"
+	"$selfillummask" "models/workshop/weapons/c_models/c_needlesaw/c_needlesaw_illum" 
+	"$additive" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.25 .25 1.75]"
+	"$nodecal" 1
+	"$bluramount" 0.5
+ 	"$refractamount" .15
+
+	"$selfillum" "1"
+	"$selfillumtint" "[500 500 800]"
+
+
+	"$phong" "1"
+	"$phongexponent" "0.5"
+	"$phongfresnelranges" "[1 2 3]"
+	"$lightwarptexture" "models\lightwarps\jarate_lightwarp"
+	"$phongboost" "0.25"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+		"Sine"
+		{
+			"sineperiod" "5"
+			"sinemin" "1"
+			"sinemax" "2"
+			"resultVar" "$selfillumtint"
+		}
+	
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

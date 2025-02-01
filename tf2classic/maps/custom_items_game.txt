@@ -1576,6 +1576,84 @@
 			"mouse_pressed_sound"		"#ui/item_heavy_emp_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
+		"57"
+		{
+			"name"						"Anchor"
+			"item_class"				"tf_weapon_anchor"
+            "show_in_armory"			"1"
+			"item_name"					"#TF_Weapon_Anchor"
+			"item_type_name"			"#TF_Weapon_Anchor_Type"
+			"item_description"			"#TF_Weapon_Anchor_Desc"
+			"item_slot"					"melee"
+			"anim_slot"					"item1"
+			"item_logname"				"anchor"
+			"item_iconname"				"anchor"
+			"image_inventory"			"backpack/weapons/w_models/w_anchor"
+			"model_world"				"models/weapons/w_models/w_anchor.mdl"
+			"model_player"				"models/weapons/v_models/v_anchor_soldier.mdl"
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/anchor_wearable.mdl"
+			"extra_wearable_bodygroup_toggle_on_active" "anchor"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"8 0 -6"
+				"meter_label"							"#TF_Airtime"
+			}
+			"attributes"
+			{
+				"anchor earthquake"
+				{
+					"attribute_class"	"earthquake_attack_active"
+					"value"				"192.0 0.0 4.0"
+				}
+				"damage force reduction"
+				{
+					"attribute_class"	"damage_force_reduction"
+					"value"				"0.25"
+				}
+				"earthquake attack mins"
+				{
+					"attribute_class"	"earthquake_attack_mins"
+					"value"				"30.0 64.0"
+				}
+				"take crits from projectile airborne simple"
+				{
+					"attribute_class"	"take_crits_projectile_airborne_simple"
+					"value"				"256"
+				}
+				"take crits from projectile during blast jump anchor"
+				{
+					"attribute_class"	"take_crits_projectile_blast_jump"
+					"value"				"1"
+				}
+				"gravity mod active increased"
+				{
+					"attribute_class"	"gravity_mod_active"
+					"value"				"1.3"
+                }
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"extra wearable bodygroup toggle active"
+				{
+					"attribute_class"	"extra_wearable_bodygroup_toggle_active"
+					"value"				"anchor"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"		"weapons/melee_anchor_itemselection.wav"
+			"drop_sound"				"weapons/melee_anchor_itemselection_drop.wav"
+		}
 
 //--------------------------------
 //--------------------------------
@@ -6243,6 +6321,7 @@ Weapon by: 'The One Of Wonders'"
 			"used_by_classes"
 			{
 				"soldier"				"1"
+				"demoman"               "1"
 			}
             "attributes"
             {
@@ -31310,7 +31389,7 @@ Weapon by: 'The One Of Wonders'"
 			"item_name_color"           "190 200 233 255"
 			"item_name"					"Blast Resort"
 			"item_type_name"			"Improvised Explosive"
-			"item_description"			"Single-use item that explodes in your face on use (12 sec cooldown)
+			"item_description"			"Single-use item that explodes in your face on use (6 sec cooldown)
 
 I don't think ye want to know what's crammed into this bottle, laddie.. it's definitely not safe fer drinking!
 
@@ -31330,7 +31409,7 @@ Weapon by: 'The One Of Wonders'"
 			"static_attrs"																	
 			{
 				"override projectile type" 				"1"		//hitscan								
-				"damage bonus hidden"					"2.22222222222222"																									
+				"damage bonus hidden"					"1.95"																									
 			}
 			"attributes"
 			{
@@ -31372,7 +31451,7 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"															
 				{
 					"attribute_class"	"effectbar_recharge_rate"
-					"value"				"2.0"
+					"value"				"1"
 				} 
 				"strange restriction type 1"															
 				{
@@ -38820,6 +38899,7 @@ Weapon from: 'New Old Weapons Pack"
 			"image_inventory"			"backpack/weapons/w_models/w_firehose"
 			"model_world"				"models/weapons/w_models/w_firehose_pyro.mdl"
 			"model_player"				"models/weapons/v_models/v_firehose_pyro.mdl"
+			"extra_wearable"            "models/player/items/pyro_firemans_essentials_backpack.mdl"
 			"attach_to_hands"			"2"
 			"used_by_classes"
 			{
@@ -39291,6 +39371,11 @@ Rework by: 'Rhynx'"
 					"attribute_class"	"earthquake_attack_active"
 					"value"				"192.0 0.0 4.0"
 				}
+				"damage force reduction"
+				{
+					"attribute_class"	"damage_force_reduction"
+					"value"				"0.25"
+				}
 				"earthquake attack mins"
 				{
 					"attribute_class"	"earthquake_attack_mins"
@@ -39676,7 +39761,7 @@ Audio and model hack by: 'Player First Games', 'Sevan'"
 	
 //-----------------------------
 //-----------------------------
-//-- Close Encounter -- 30005 ----
+//-- Close Encounter -- 30005 -
 //-----------------------------
 //-----------------------------
 
@@ -39692,7 +39777,9 @@ Audio and model hack by: 'Player First Games', 'Sevan'"
 			"item_name"					"Close Encounter"
 			"item_type_name"			"#TF_Weapon_Shotgun"
 			"item_description"			"
-I like to keep this handy For close encounters!"
+I like to keep this handy For close encounters!
+
+Weapon from: ReValve Pack"
 			"item_logname"				"broken_steel_soldier"
 			"item_iconname"				""
 			"image_inventory"			"backpack\weapons\w_models\w_marine_shotgun\w_marine_shotgun"
@@ -39764,14 +39851,16 @@ I like to keep this handy For close encounters!"
 		{
 			"name"						"TF_WEAPON_SPEEDWATCH"
 			"prefab"					"weapon_invis"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_name_color"           "190 200 233 255"
 
 			"item_name"					"Hide-n-Seek"
 			"item_type_name"			"Smoke Watches"
 			"item_description"			"Watches Perk: Smoke Cloak
 
-This will be the last time you see me"
+This will be the last time you see me
+
+Weapon from: ReValve Pack"
 			"image_inventory"			"backpack\weapons\w_models\v_hidenseek\v_hidenseek"
 			"model_player"				"models\weapons\v_models\v_radar_watches_spy.mdl"
 			"attach_to_hands"			"0"
@@ -39809,7 +39898,7 @@ This will be the last time you see me"
 			}
 			"name"						"TF_WEARABLE_SHIELD_TIDETURNER"
 			"item_class"				"tf_wearable"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"primary"
 			"equip_region"				"vest"
 
@@ -39824,7 +39913,9 @@ This will be the last time you see me"
 			"item_description"			"Alt-Fire: Rush toward your enemies! (5s)
 You're doing everything faster, but you are marked for death
 
-I am the King of Australia!"
+I am the King of Australia!
+
+Weapon from: ReValve Pack"
 			"item_logname"				"rusher_vest"
 			"item_iconname"				""
 			"image_inventory"			"backpack\player\w_sniper_vest\w_sniper_vest"
@@ -39884,7 +39975,7 @@ I am the King of Australia!"
 			}
 			"name"						"TF_WEARABLE_BOMB_SUIT"
 			"item_class"				"tf_wearable"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_slot"					"secondary"
 			"equip_region"				"vest"
 
@@ -39897,7 +39988,9 @@ I am the King of Australia!"
 			"item_name"					"Blast Blocker"
 			"item_type_name"			"Bomb Suit"
 			"item_description"			"
-I'm not afraid of explosives!"
+I'm not afraid of explosives!
+
+Weapon from: ReValve Pack"
 			"item_logname"				"blast_blocker"
 			"item_iconname"				""											// Kill icon for blast-proof suit?
 			"image_inventory"			"backpack\player\w_blast_blocker\w_blast_blocker"
@@ -39943,6 +40036,443 @@ I'm not afraid of explosives!"
 			}
 			"mouse_pressed_sound"		"#ui/item_helmet_pickup.wav"
 			"drop_sound"				"#ui/item_helmet_drop.wav"
+		}
+		
+		"30009"
+         {
+			"name"						"TF_WEAPON_BLUNTFORCE"
+			"prefab"					"weapon_rocketlauncher"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+			"item_name_color"           "190 200 233 255"
+
+			"propername"				"1"
+			"item_name"					"Blunt Force"
+			"item_type_name"			"Fat Ass Joint"
+			"item_description"			"
+Let me be blunt: Gain a short speed boost after hitting an enemy.
+
+I was gonna capture the point
+but then I got high.
+
+Model by: 'BlackSlave'
+Stats by: 'Panáček'
+
+Weapon from: Pancake's Custom Weapons"
+			"item_logname"				"Blunt"
+//			"item_iconname"				"Blunt Force"
+			"image_inventory"			"backpack/weapons/w_models/w_blunt"
+			"model_world"				"models\weapons\c_models\c_boofooka/c_boofooka.mdl"
+			"model_player"				"models\weapons\c_models\c_boofooka/v_boofooka.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"taunt01_v2"
+			}
+			"attributes"
+			{
+				"tranq on hit"
+				{
+					"attribute_class"	"mod_tranq_onhit"
+					"value"				"1"
+				}
+				"instant reload on direct hit"
+				{
+					"attribute_class"	"instant_reload_on_direct_hit"
+					"value"				"1"
+				}
+                "add condition on hit"																
+				{
+					"attribute_class"	"add_onhit_addcond_self_weapon"  
+					"value" 			"32 2"                   
+ 				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.45"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.5"
+				}
+				"hidden primary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "0.5"
+				}
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value" "0.25"
+				}
+			}
+			"visuals"
+			{
+				"sound_deploy"			"Weapon_RPG.Draw"
+				"sound_single_shot"		"Weapon_Blunt.Single"
+				"sound_burst"			"Weapon_Blunt.SingleCrit"
+				"trail_effect"			"flaming_arrow"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		"30010"
+		{
+			"name"						"TF_WEAPON_FAMILY_BUSINESS"
+			"prefab"					"weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"Full-Throttle"
+			"item_type_name"			"#TF_Weapon_Shotgun"
+			"item_description"			"
+You can't run away from me forever coward!
+
+Weapon from: ReValve Pack"
+			"item_logname"				"heavy_hotrod"
+			"item_iconname"				""
+			"image_inventory"			"backpack\weapons\w_models\w_full-throttle\w_full-throttle"
+			"model_world"				"models\w_models\w_full_throttle.mdl"
+			"model_player"				"models\v_models\v_full_throttle_heavy.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"taunt02"
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.15"
+				}
+				"mod full-throttle unique attr 1"						// Conflicts
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"mod full-throttle unique attr 2"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"5"
+				}
+				"add condition on hit self weapon"
+				{
+					"attribute_class"	"add_onhit_addcond_self_weapon"
+					"value"				"32 0.5"
+				}
+				"add condition on kill"
+				{
+					"attribute_class"	"add_onkill_addcond_self"
+					"value"				"32 5"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.67"
+				}
+				// Backend stuff
+				"hide_attrib_percentage"
+				{
+					"attribute_class"	"mult_projectile_range"
+					"value"				"0.150"	
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_HotrodShotgun.Single"
+				"sound_burst"			"Weapon_HotrodShotgun.SingleCrit"
+			}
+			"mouse_pressed_sound"		"#ui/shotgun_alt_pickup_stock.wav"
+			"drop_sound"				"#ui/shotgun_alt_drop_stock.wav"
+		}
+		
+		"30011"
+		{
+			"name"						"TF_WEAPON_GIANT_FLAMETHROWER"
+			"prefab"					"weapon_minigun"
+			"item_class"				"tf_weapon_flamethrower"
+			"item_slot"					"primary"
+			"anim_slot"					"primary"
+			"show_in_armory"			"0"
+
+			"propername"				"1"
+			"item_name_color"			"204 204 250 255"
+			"item_name"					"Coward Burner"
+			"item_type_name"			"#TF_Weapon_Flamethrower"
+			"item_description"			"
+You have awakened the fury of the dragon coward!
+
+Weapon from: ReValve Pack"
+			"item_logname"				"dragon_ft"
+			"item_iconname"				""
+			"image_inventory"			"backpack\weapons\w_models\w_dragon_ft\w_dragon_ft"
+			"model_world"				"models\w_models\w_dragon_ft.mdl"
+			"model_player"				"models\v_models\v_dragon_ft_heavy.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"fire rate bonus"						"0.5"
+				"dmg taken from burning target reduced on active"	"0.25"
+				"maxammo primary increased"				"1.25"
+			}
+			"attributes"
+			{
+				"aiming movespeed increased"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1.10"
+				}
+				"mod flamethrower push"	
+				{
+					"attribute_class"	"set_flamethrower_push_disabled"
+					"value"				"1"
+				}
+				"always spool up"											// The math is right at 0.52, but I thought I'd give the users a head start.
+				{
+					"attribute_class"	"mult_player_movespeed_active"
+					"value"				"0.60"
+				}
+				"hide_attrib_percentage"									// Can't jump while deployed, unless if you using "minigun jump while revved"
+				{
+					"attribute_class"	"mod_jump_height_from_weapon"
+					"value"				"0"
+				}
+				"hide_attrib_percentage"	
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				"4"
+				}
+				"override mult deploy weapon time animation"	
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				"1"
+				}
+				"hide_attrib_percentage"									// Now this is very useful, because you have TOO SLOW drawing speed and slowing while active
+				{
+					"attribute_class"	"mult_flame_velocity"
+					"value"				"1.75"
+				}
+				"hide_attrib_percentage"	
+				{
+					"attribute_class"	"mult_flame_size"
+					"value"				"1.5"
+				}
+			}			
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_GiantFT.FireStart"
+//				"sound_special1"		"Weapon_ChemThrower.FireLoop"
+				"sound_reload"			"Weapon_GiantFT.FireLoop"
+//				"sound_special3"		"Weapon_ChemThrower.WindDown"
+				"sound_burst"			"Weapon_GiantFT.FireLoopCrit"
+				"animation_replacement"
+				{
+					"ACT_MP_STAND_PRIMARY"				"ACT_MP_DEPLOYED_IDLE"					// Changes standart stand pose to deployed variant
+					"ACT_MP_RUN_PRIMARY"				"ACT_MP_DEPLOYED_PRIMARY"
+//					"ACT_MP_ATTACK_STAND_POSTFIRE"		"ACT_MP_DEPLOYED_IDLE"					// No weapon spin down anim
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_flamethrower_pickup.wav"
+			"drop_sound"				"#ui/item_heavier_gun_drop.wav"
+		}
+		
+		"30012"
+		{
+			"name"						"TF_WEAPON_BEER_LAUNCHER"
+			"prefab"					"weapon_grenade_launcher"
+			"show_in_armory"			"0"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_name"					"Beer Pressure"
+			"item_type_name"			"Beer Launcher"
+			"item_description"			"Shoots overpressurized beer cans that deal impact damage and only explode after 3 seconds
+
+Model by: 'Ertz' 'Kibbleknight'
+Projectiles by: 'nano'
+Particles and Stats by: 'Panáček'
+
+Weapon from: Pancake's Custom Weapons"
+			"item_logname"				"cold one"
+//			"item_iconname"				"beer pressure"
+			"image_inventory"			"backpack/weapons/w_models/w_beer_launcher"
+			"model_world"				"models/weapons/c_models/c_beer_launcher/c_beer_launcher.mdl"
+			"model_player"				"models/weapons/c_models/c_beer_launcher/c_beer_launcher.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"demoman"					"1"
+			}
+			"attributes"
+			{
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_grenade_beercan.mdl"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"33"
+				}
+				"brick explodes"
+				{
+					"attribute_class"	"brick_explode"
+					"value"				"1"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"fuse_mult"
+					"value"				"0.3"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"1.15"
+				}
+			}
+			"visuals"
+			{
+				"sound_special1"		"Weapon_Beer.Explode"
+				"explosion_effect"		"beer_explosion"
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		
+		"30013"
+		{
+			"name"						"TF_WEAPON_ASS_RIFLE"
+			"prefab"					"weapon_sniperrifle"
+			"show_in_armory"			"1"
+
+			"propername"				"1"
+			"item_name_color"			"204 204 250 255"
+			"item_name"					"Machina"
+			"item_type_name"			"#TF_Weapon_SniperRifle"
+			"item_description"			""
+			"item_logname"				"machina"
+			"item_iconname"				""
+			"image_inventory"			"backpack\weapons\w_models\w_dex_sniperrifle\w_dex_sniperrifle"
+			"model_world"				"models\w_models\w_dex_sniperrifle.mdl"
+			"model_player"				"models\v_models\v_dex_sniperrifle.mdl"							// I recompiled models cuz Machina have unique sounds
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"sniper"				"1"
+			}
+			"static_attrs"
+			{
+				"override projectile type"				"2"						// Misfire "rocket". Technically it really shoots harmless rocket with sparks particle
+				"override projectile type scoped"		"1"						// in scope you shooting normal bullet
+			}
+			"attributes"
+			{
+				"damage bonus"													// TF2C not have charging damage modificator
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.25"
+				}
+				"apply inverse zoom"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"no scope shots disabled"										// Misfire text
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"team colored tracers"											// Live TF2 display only text
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"misfire no damage"												// So yeah, i'm talking about misfire, here it does ZERO damage
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"mod sniper zoom fov override"
+				{
+					"attribute_class"	"mod_sniper_zoom_fov_override"
+					"value"				"110"
+				}
+//				"SRifle Charge rate decreased"									// I tried 'recreate' Live "On Full Charge: +15% damage per shot", but this is too op, besides, you can't shoot without a scope charging anyway, so.
+//				{
+//					"attribute_class"	"mult_sniper_charge_per_sec"
+//					"value"				"1.35"
+//				}
+				
+				
+			// Misfire
+				"hide_attrib_percentage"										// No misfire damage
+				{
+					"attribute_class"	"mult_explosion_splash_damage"
+					"value"				"0.001"
+				}
+				"hide_attrib_percentage"										// No radius what makes ~1 from blast is more useless
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"0.001"
+				}
+				"rocket limited lifetime"										// Rocket explodes where the barrel of the gun roughly ends, not perfect for any viewmodel changing.
+				{
+					"attribute_class"	"rocket_lifetime"
+					"value"				"0.025"
+				}
+				"hide_attrib_percentage"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"2"
+				}
+				"self dmg push force hidden"									// Please don't use your sniper rifle for blast jumps.
+				{
+					"attribute_class"	"mult_dmgself_push_force"
+					"value"				"0"
+				}
+				"hide_attrib_additive"									// This is not Rocket launcher
+				{
+					"attribute_class"	"no_self_blast_dmg"
+					"value"				"1"
+				}
+				"custom projectile model"														// No rockets
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_drg_ball.mdl"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Raygun.Single"
+				"sound_burst"			"Weapon_Raygun.SingleCrit"
+				"sound_reload"			"Weapon_Raygun.WorldReload"
+				"sound_special1"		"Weapon_Raygun.Misfire"
+				"explosion_effect"		"arm_detonate_sparks"
+				"muzzle_flash"			"muzzle_tranq"
+				"tracer_effect"			"sniper_dxhr_rail"
+				"trail_effect"			"sniper_dxhr_rail"										// No rocket firey on misfire!
+				"trail_effect_crit"		"sniper_dxhr_rail"
+			}
+			"mouse_pressed_sound"		"#ui/sniperrifle_alt_pickup.wav"
+			"drop_sound"				"#ui/sniperrifle_alt_drop.wav"
 		}
 	}
 	
@@ -45239,6 +45769,52 @@ In Slam Fire: +60% fire rate and infinite clip"
 			"attribute_type"		"string"													
 			"description_format"	"value_is_additive"
 			"custom_color"			"197 3 3 255"	
+			"effect_type"			"negative"
+		}
+		"32024"
+		{
+			"name"					"mod full-throttle unique attr 1"
+			"description_string"	"On hit: Move speed bonus for short time"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"32025"
+		{
+			"name"					"mod full-throttle unique attr 2"
+			"description_string"	"On kill: Move speed bonus for %s1 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		
+		"32026"
+		{
+			"name"					"no scope shots disabled"
+			"description_string"	"Misfire unless zoomed"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		
+		"32027"
+		{
+			"name"					"team colored tracers"
+			"description_string"	"Fires tracer rounds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		
+		"32028"
+		{
+			"name"					"misfire no damage"
+			"description_string"	"Misfire does ZERO damage"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		
+		"32029"
+		{
+			"name"					"apply inverse zoom"
+			"description_string"	"This weapon's scope increases your field of view"
+			"description_format"	"value_is_additive"
 			"effect_type"			"negative"
 		}
 	}

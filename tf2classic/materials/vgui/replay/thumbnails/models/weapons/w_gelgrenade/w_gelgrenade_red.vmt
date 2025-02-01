@@ -1,0 +1,44 @@
+// ### Written by TF2 Item Material Writer (http://www.hamaloo.co.uk/tf2matwrite/). This file should be in the directory "materials\models\weapons\c_items\" and named "w_gelgrenade_red.vmt". ###
+VertexLitGeneric
+{
+	$baseTexture vgui\replay\thumbnails\models\weapons\w_gelgrenade\w_gelgrenade_red
+	$bumpMap models\effects\flat_normal
+	
+	$lightWarpTexture models\lightwarps\weapon_lightwarp
+	
+	$phong 1
+	$baseMapAlphaPhongMask 1
+	$phongExponent 30
+	$phongBoost 5
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+	$rimLight 1
+	$rimLightExponent 4
+	$rimLightBoost 1
+	
+	$selfIllum 1
+	
+	$blink 0
+	$switch 0.5
+	$lightOff 0.1
+	$lightOn 2.0
+	
+	Proxies
+	{
+		Sine
+		{
+			sinePeriod 0.4
+			sineMin 0.0
+			sineMax 1.0
+			resultVar $blink
+		}
+		LessOrEqual
+		{
+			lessEqualVar $lightOff
+			greaterVar $lightOn
+			srcVar1 $blink
+			srcVar2 $switch
+			resultVar $selfIllumTint
+		}
+	}
+}

@@ -1,0 +1,40 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/weapons/c_items/c_rations"
+	"$basemapalphaphongmask" "1"
+	
+	//phong properties
+	"$phong"	"1"
+	"$phongboost"	"1"
+	"$phongexponent"	"30"
+	"$phongfresnelranges"	"[1 2 2.5]"
+	"$rimlight"	"1"
+	"$rimlightexponent"	"1"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

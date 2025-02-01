@@ -1,0 +1,36 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\weapons\c_items\c_littleprick_liquid_blue"
+	
+	"$basemapalphaphongmask" "1"
+	
+	"$selfillum" "1"
+	"$selfillumtint" "[.2 .4 1]"
+	
+
+	"$glowcolor" "1"
+
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+
+	}
+}

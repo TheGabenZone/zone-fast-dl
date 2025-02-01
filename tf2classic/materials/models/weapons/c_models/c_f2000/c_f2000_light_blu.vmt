@@ -1,0 +1,52 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\c_models\c_f2000\c_f2000_light_blu"
+
+
+	"$phong" "1"
+	//commented out to use the exponent mask
+	//"$phongexponent" "99999.000000"
+
+	"$phongboost" "0.000000"
+
+	
+	//scales up the exponent texture which usually only has about 120 levels of exponent
+	"$phongexponentfactor"  "120"
+	"$phongalbedotint" "1"
+	
+	"$lightwarptexture" "models/lightwarps/softened_weapon_lightwarp"
+			
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$halflambert" "1"
+	"$glowcolor" "1"
+	
+
+	
+	"$tempvar" "0"
+
+	//commented out to use the exponent mask
+	//"$basephongexponent" "15"
+	//"$basephongboost" "3"
+
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "1"						
+	"$rimlightexponent"		"99999.000000"
+	"$rimlightboost"		"0.000000"
+	"$rimmask" "1"
+                "$additive"		"1"
+
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+
+	
+	"$yellow" "0"
+
+                
+                "$selfillum" "1"
+	"$selfillumtint" "[2 .55 2.2]"
+
+
+}

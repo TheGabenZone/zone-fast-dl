@@ -1,0 +1,14 @@
+"UnlitGeneric"
+{
+
+	"$basetexture"	"vgui\replay\thumbnails\models\weapons\c_models\c_longshot\c_longshot_reticle"
+	"$model" "1"
+
+	
+	"$additive" "1"
+	"$translucent" "1"
+
+//	"$alpha" ".1"
+
+
+}

@@ -1,0 +1,48 @@
+"UnlitTwoTexture"
+{
+	"$basetexture"	"models/weapons/c_items/c_vortex"
+	"$texture2" 	"models/weapons/c_items/c_souls_green"
+	"$surfaceprop"	"default"
+
+      	 "$angle" 0.0
+   	 "$translate" "[0.0 0.0]"
+      	 "$center" "[.5 .5]"		
+
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+
+		 "LinearRamp"
+            		{
+                		"rate" -45
+                		"initialValue" 0.0
+                		"resultVar" "$angle"
+            		}
+
+           		 "TextureTransform"
+            		{
+                		"translateVar" "$translate"
+                		"rotateVar" "$angle"
+                		"centerVar" "$center"
+                		"resultVar" "$basetexturetransform"
+            		}
+ 
+	
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" .5
+			"texturescrollangle" 90
+		}
+
+
+		"weapon_invis"
+		{
+		}
+	}
+}
+
+

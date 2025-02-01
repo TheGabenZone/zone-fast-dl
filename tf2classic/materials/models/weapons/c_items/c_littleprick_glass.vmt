@@ -1,0 +1,42 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\weapons\c_items\c_littleprick_glass"
+	"$translucent" "1"
+	"$additive" "1"
+	"$nocull" "1"
+
+	"$phong" "1"
+	"$phongexponent" "65"
+	"$phongfresnelranges" "[1 2 4]"
+	"$lightwarptexture" "models/lightwarps/jarate_lightwarp"
+	"$phongboost" "6"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" "2"
+
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+
+	}
+
+}

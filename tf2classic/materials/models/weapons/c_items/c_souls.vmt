@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/weapons/c_items/c_souls"
+	"$surfaceprop"	"default"
+}

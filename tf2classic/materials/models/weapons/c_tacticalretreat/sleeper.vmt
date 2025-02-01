@@ -1,0 +1,53 @@
+"VertexlitGeneric"
+{
+	//Diffuse
+
+	"$baseTexture" "models\weapons\c_tacticalretreat\sleeper"
+	
+	//Normale
+
+	"$bumpmap" "models\weapons\c_tacticalretreat/sleeper_normal"
+
+	//Post-Process
+
+	"$phongwarptexture"  "models\weapons\c_tacticalretreat/c_haunted_watch_phongwarp"
+	"$lightwarptexture" "models\weapons\c_tacticalretreat/c_haunted_watch_lightwarp"
+
+	
+	//Cubemaps
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.01 .01 .01]"
+
+	//Variable du phong
+
+	"$phong" "1"
+
+	"$phongexponent" "100"
+	"$phongboost" "5"	
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

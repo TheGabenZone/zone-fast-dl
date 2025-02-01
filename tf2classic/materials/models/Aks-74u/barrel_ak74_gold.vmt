@@ -1,0 +1,43 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/ak74/barrel_ak74_gold"
+	"$basemapalphaphongmask" "1"
+
+	    // Begin GOLD look
+
+	"$envmap" "cubemaps/cubemap_gold001.hdr"	
+	"$envmaptint" "[2.5 2.5 1.15]"
+	
+	// End GOLD look
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "5"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

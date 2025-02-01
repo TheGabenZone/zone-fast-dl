@@ -1,0 +1,41 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\weapons\c_items\c_ver_hose"
+	
+	"$phong" "1"
+	"$phongexponent" "7"
+	"$phongboost" ".03"	
+//	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges"	"[1.5 .5 3]"
+	"$halflambert" "1"
+
+	"$tempvar" "0"
+
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "1"						
+	"$rimlightexponent" "4"				
+	"$rimlightboost" "1.5"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+
+	}
+}

@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/arena_crypts/ryz_hearse_blackpaint"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1" 
+	"$envmaptint" "[.05 .05 .05]"
+	
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "0.25"	
+	"$lightwarptexture" "models/props_vehicles/pickup_lightwarp"
+	"$phongfresnelranges"	"[1 1.5 1]"
+}

@@ -1,0 +1,48 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/workshop/player/items/soldier/tank_launcher/glass"
+	//"$bumpmap"		"models/workshop/player/items/soldier/tank_cap/glasses_phong"
+
+	"$basemapalphaphongmask"		"0"
+
+	"$phong"		"1"
+	"$phongexponent"		"10"
+	"$phongboost"		"5"
+	"$phongfresnelranges"		"[.25 .5 1]"
+	"$rimlight"		"0"
+	"$rimlightexponent"		"4"
+	"$rimlightboost"		"2"
+
+
+	"$translucent" "1"
+	"$additive" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
+	}
+}
+

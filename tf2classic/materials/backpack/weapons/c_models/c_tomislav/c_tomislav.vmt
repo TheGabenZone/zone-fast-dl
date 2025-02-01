@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\workshop\weapons\c_models\c_ppsh_minigun\c_ppsh_minigun"
+	$translucent 1
+	$vertexcolor 1
+}

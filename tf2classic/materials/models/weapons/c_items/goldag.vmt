@@ -1,0 +1,58 @@
+"VertexlitGeneric"
+{
+	//Diffuse
+
+	"$baseTexture" "models\weapons\c_items/silverdag"
+	
+	//Normale
+
+//	"$bumpmap" "models\weapons\c_items/c_haunted_watch_normal"
+
+	//Post-Process
+
+	"$phongwarptexture"  "models/weapons/c_items/c_haunted_watch_phongwarp"
+	"$lightwarptexture" "models\weapons\c_items/c_haunted_watch_lightwarp"
+
+//	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+	"$yellow" "0"
+
+
+	"$envmap" "effects/saxxy/saxxy_gold"
+	"$envmaptint" "[1 1 1]"
+	
+//	"$normalmapalphaenvmapmask" "1"
+//	"$basemapalphaphongmask"	"1"
+
+	"$phong" "1"
+	"$phongexponent" "60"
+	"$phongboost" "1"
+	"$phongfresnelranges"	"[1 1 1]"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}
