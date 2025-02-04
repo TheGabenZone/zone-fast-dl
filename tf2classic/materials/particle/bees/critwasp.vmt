@@ -1,0 +1,15 @@
+"Spritecard"
+{
+	"$basetexture" "particle\bees\critwasp"
+	"$frame" "2"
+   "Proxies"
+   {
+      "AnimatedTexture"
+      {
+         "animatedtexturevar" "$basetexture"
+         "animatedtextureframenumvar" "$frame"
+         "animatedtextureframerate" 24
+      }
+   }
+	
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\weapons\w_models\w_genevasuggestion_large"
+	$translucent 1
+	$vertexcolor 1
+}

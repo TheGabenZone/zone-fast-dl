@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/arena_crypts/ryz_hearse_licenseplate"
+	"$bumpmap" "models/arena_crypts/ryz_hearse_licenseplate_normal"
+}

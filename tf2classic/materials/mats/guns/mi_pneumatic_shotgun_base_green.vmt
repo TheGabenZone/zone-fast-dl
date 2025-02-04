@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "mats\guns\chargeshotgun_green_d"
+                 "$bumpmap"	 	"mats\guns/chargeshotgun_n"
+	$rimlight               1
+	$rimlightexponent       55
+	$rimlightboost        4
+
+}

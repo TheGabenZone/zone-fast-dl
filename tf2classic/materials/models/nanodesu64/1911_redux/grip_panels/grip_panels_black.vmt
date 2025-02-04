@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Nanodesu64/1911_redux/Grip_panels/grip_panels_black"
+	"$nocull" 1
+	"$phong" "1"
+	"$phongexponent" "11"
+	"$phongboost" ".1"	
+	//"$lightwarptexture" "models/props_vehicles/pickup_lightwarp"
+	"$phongfresnelranges"	"[1 1 4]"
+	"$basemapalphaphongmask" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "2"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".2"										// Boost for ambient cube component of rim lighting
+
+}
