@@ -1,6 +1,0 @@
-"UnlitGeneric"
-{
-	"$baseTexture" "backpack\weapons\w_models\w_quadlauncher_large"
-	$translucent 1
-	$vertexcolor 1
-}
