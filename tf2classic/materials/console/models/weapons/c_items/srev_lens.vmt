@@ -1,0 +1,13 @@
+"Refract"
+{
+	<dx90
+	{
+		"$fallbackmaterial" "models/props_c17/fisheyelens_DX60"
+	}
+
+ 	"$model" 1
+	"$nodecal" 1
+	$refracttint "[1 .9 .7]"
+ 	"$refractamount" .30
+ 	"$normalmap"  "console\models\weapons\c_items\srev_lens"
+}

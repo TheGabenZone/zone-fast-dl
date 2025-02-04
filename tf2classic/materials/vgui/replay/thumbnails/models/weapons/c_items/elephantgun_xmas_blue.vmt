@@ -1,0 +1,44 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "vgui\replay\thumbnails\models\weapons\c_items\elephantgun_xmas_blue"
+	"$basemapalphaphongmask" "1"
+	//"$bumpmap" "models\weapons\c_items\elephantnormal"
+	//"$ssbump" "1"
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" ".5"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongfresnelranges"	"[.5 .5 3]"
+	"$halflambert" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"			
+	"$rimlightexponent" "20"	
+	"$rimlightboost" ".25"
+
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

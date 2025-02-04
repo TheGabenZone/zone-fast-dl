@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui/blood_watch_FG"
+	"$translucent" "1"
+}
