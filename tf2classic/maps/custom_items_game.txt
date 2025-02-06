@@ -39340,7 +39340,7 @@ Rework by: 'Rhynx'"
 			"item_type_name"			"#TF_Weapon_Anchor_Type"
 			"item_description"			"#TF_Weapon_Anchor_Desc"
 			"item_slot"					"melee"
-			"anim_slot"					"melee"
+			"anim_slot"					"item1"
 			"item_logname"				"anchor"
 			"item_iconname"				"anchor"
 			"image_inventory"			"backpack/weapons/w_models/w_anchor"
@@ -39543,12 +39543,12 @@ Cosmetic help by:'Sevan'"
 				"MISTEP"
 				{
 					"attribute_class"	"add_wearable_cond_on_secondary_attack"
-					"value"				"4 1.0 15.0"
+					"value"				"4 0.5 15.0"
 				}
 				"wearable cond on effect percent"
 				{
 					"attribute_class"	"add_wearable_cond_on_effect_percent"
-					"value"				"118 0.99"												
+					"value"				"118 0.5"										
 				}
 				"add condition on hit self"
 				{
