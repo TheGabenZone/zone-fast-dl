@@ -19883,7 +19883,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"Masterkey"						
 			"prefab"					"weapon_wrench"								
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			
 			"item_quality"				"rarity3"
 			
@@ -24904,7 +24904,7 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"name"						"TF_WEAPON_DEFENSE_ANGEL"
 			"prefab"					"weapon_medigun"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"equip_region"				"medigun_backpack"										
 
 			"propername"				"0"
@@ -36601,7 +36601,7 @@ Weapon by: 'The One Of Wonders'"
 			
 			"item_name_color"           "190 200 233 255"
 			
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_name"					"Unfortunate Son"
 			"item_type_name"			"Hybrid Burst Rifle"
 			"item_description"			"
@@ -37042,7 +37042,7 @@ Weapon by: 'The One Of Wonders'"
 			"item_class"				"tf_weapon_flamethrower"
 			"equip_region"				"grenades"
 			
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_name_color"           "190 200 233 255"
 			"item_name"					"Hydro Pump"
 			"item_logname" 				"Hydro Pump"
@@ -37253,7 +37253,7 @@ Weapon ported by: 'Noclue'"
 			"item_name_color"           "190 200 233 255"
 			"item_logname"				"Airburst Rifle"
 			"item_iconname"				"Airburst Rifle"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_type_name"			"Hybrid Launcher"
 			"item_name"					"Airburst Rifle"
 			"item_description"			"
@@ -37371,7 +37371,7 @@ Weapon by: 'Noclue'"
 			"prefab"					"weapon_minigun"
 			"item_class"				"tf_weapon_minigun"
 			
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 			"item_name_color"           "190 200 233 255"
 			
 			"propername"				"0"
