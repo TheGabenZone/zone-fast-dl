@@ -1,9 +1,0 @@
-"Patch"
-{
-	include materials\models\workshop\weapons\c_models\c_scatterdrum\c_scatterdrum.vmt
-	
-	insert
-	{
-		"$baseTexture" "console\models\workshop\weapons\c_models\c_scatterdrum\c_scatterdrum"
-	}
-}
