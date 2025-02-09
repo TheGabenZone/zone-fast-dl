@@ -39289,14 +39289,12 @@ Rework by: 'Rhynx'"
 			"show_in_armory"			"1"
 			"propername"				"1"
 
-			"item_name_color"           "190 200 233 255"
+			"item_quality"				"rarity2"
 
 			"item_type_name"			"Revolver"
 			"item_name"				    "Helsing's Heirloom"
-			"item_description"			" 20% faster deploy and holster speed
-			On hit: Nudges enemies towards you.
-
-			Christened Bullet: Has a chance to fling enemies straight towards you; guaranteed if attacking at a higher elevation.
+			"item_description"			" 
+			Dracula! You owe me 10 dollars.
 			
 			Model by: 'Swaggernaut'
 			Weapon by: 'Colrot'"
@@ -39313,18 +39311,16 @@ Rework by: 'Rhynx'"
 			"static_attrs"
 			{
 				"override projectile type"			"29"
+				"Heirloom stat"     "1"
+				"damage bonus"		"1.1"
+				"deploy time decreased"   ".8"
 			}
 			"attributes"
 			{
-				"damage bonus"																
-				{
-					"attribute_class"	"mult_dmg"
-					"value" 			"1.1"
-				}
 				 "reload time increased"	
 				{
 					"attribute_class"	"mult_reload_time"
-					"value"				"1.4"
+					"value"				"1.15"
 				}
 				"fire rate penalty"																
 				{
@@ -39346,16 +39342,6 @@ Rework by: 'Rhynx'"
 				{
 					"attribute_class"	"apply_look_velocity_on_damage"							
 					"value"				"-400"
-				}
-				"voice pitch scale"
-				{
-				"attribute_class"	"mult_single_wep_deploy_time"
-					"value"				"0.8"
-				}
-				"voice pitch scale"
-				{
-					"attribute_class"	"mult_deploy_time"
-					"value"				"0.8"
 				}
 
 			}
@@ -45847,6 +45833,15 @@ In Slam Fire: +60% fire rate and infinite clip"
 			"description_string"	"This weapon's scope increases your field of view"
 			"description_format"	"value_is_additive"
 			"effect_type"			"negative"
+		}
+		
+		"32030"
+		{
+			"name"					"Heirloom stat"
+			"description_string"	"Silver Nail: Shoots nails that flings enemies towards you"												
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"	
+			"effect_type"			"positive"
 		}
 	}
 }
