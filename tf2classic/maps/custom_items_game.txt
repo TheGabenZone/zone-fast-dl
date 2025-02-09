@@ -34712,7 +34712,8 @@ Weapon by: 'Reagy'"
 		"9931"
 		{
 			"name"						"TF_WEAPON_TWIG_MEDIC"
-			"prefab"					"weapon_umbrella"			
+			"item_class"				"tf_weapon_umbrella"
+			"item_slot"                 "melee"
 			"show_in_armory"			"1"
 
 			"propername"				"0"
