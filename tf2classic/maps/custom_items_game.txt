@@ -38480,7 +38480,7 @@ Cosmetic help by:'Sevan'"
 			"item_logname"				"Grim lurker"
 			"item_iconname"				"Grim lurker"
 			"image_inventory"			"backpack/weapons/c_models/c_grim_lurker/c_grim_lurker"
-			"model_player"			    "models/player/items/custom/heavy/grim_lurker/grim_lurker.mdl"
+			"model_player"			    "models/player/items/custom/heavy/grim_lurker.mdl"
 			"used_by_classes"
 			{
 				"heavy"				"1"
