@@ -19949,32 +19949,6 @@ Weapon from: Tangerine Paint and Grunt's Weapon Addons"
 					"value" 			"1" // Mini
 				}
 				
-				"dmg taken from fall reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_fall"
-					"value" 			"0.85"
-				}
-				"dmg taken from crit reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_crit"
-					"value" 			"0.85"
-				}
-				"dmg taken from fire reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_fire"
-					"value" 			"0.85"
-				}
-				"dmg taken from blast reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_explosions"
-					"value" 			"0.85"
-				}
-				"dmg taken from bullets reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_bullets"
-					"value" 			"0.85"
-				}
-				
 				"engy sentry fire rate increased"
 				{
 					"attribute_class"	"mult_sentry_firerate"
