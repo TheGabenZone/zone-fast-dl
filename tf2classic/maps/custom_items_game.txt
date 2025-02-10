@@ -26125,7 +26125,7 @@ Weapon by: 'The One Of Wonders'"
 		{
 			"name"						"TF_WEAPON_MAGNETIC_WRENCH"									
 			"prefab"					"weapon_wrench"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 
 			"propername"				"0"
 			"item_name_color"           "190 200 233 255"
