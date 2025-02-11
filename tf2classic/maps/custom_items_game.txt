@@ -38074,7 +38074,7 @@ Modified by: 'Reagy'"
 			"name"						"TF_WEAPON_FOOTBALL"
 			"item_class"				"tf_weapon_grenade_mirv"
 			"prefab"					"medieval_base use_heavy"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"tags"
 			{
 				"can_deal_gib_damage"					"1"
