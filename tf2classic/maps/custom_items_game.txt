@@ -38479,8 +38479,8 @@ Cosmetics by:'Valve''Big Bob'
 Cosmetic help by:'Sevan'"
 			"item_logname"				"Grim lurker"
 			"item_iconname"				"Grim lurker"
-			"image_inventory"			"backpack/weapons/c_models/c_grim_lurker/c_grim_lurker"
-			"model_player"			    "models/player/items/custom/heavy/grim_lurker.mdl"
+			"image_inventory"			"backpack/workshop/player/items/all_class/hwn2021_goalkeeper/hwn2021_goalkeeper"
+			"model_player"			    "models/workshop/player/items/all_class/hwn2021_goalkeeper/hwn2021_goalkeeper_heavy.mdl"
 			"used_by_classes"
 			{
 				"heavy"				"1"

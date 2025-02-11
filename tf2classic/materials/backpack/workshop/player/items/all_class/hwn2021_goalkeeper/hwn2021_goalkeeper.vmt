@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/hwn2021_goalkeeper/hwn2021_goalkeeper"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}
