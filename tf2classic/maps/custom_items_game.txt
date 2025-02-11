@@ -38497,12 +38497,12 @@ Cosmetic help by:'Sevan'"
 				"MISTEP"
 				{
 					"attribute_class"	"add_wearable_cond_on_secondary_attack"
-					"value"				"4 0.5 15.0"
+					"value"				"4 2 12.0"
 				}
 				"wearable cond on effect percent"
 				{
 					"attribute_class"	"add_wearable_cond_on_effect_percent"
-					"value"				"118 0.5"										
+					"value"				"118 2"										
 				}
 				"add condition on hit self"
 				{
@@ -38607,7 +38607,7 @@ Audio and model hack by: 'Player First Games', 'Sevan'"
 				"heal on kill on crit"											
 				{
 					"attribute_class"	"heal_on_kill_crit"
-					"value"				"50"
+					"value"				"120"
 				}
 				"fire rate penalty"
 				{
