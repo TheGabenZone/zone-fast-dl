@@ -22324,49 +22324,6 @@
 }
 
 // ------------------------------------------------------------------------------------ //
-// SHOTGUN
-// ------------------------------------------------------------------------------------ //
-"Weapon_Garand.Single"
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"1.0"
-	"wave"		"weapons\garand_shoot.wav"
-}
-
-"Weapon_Garand.SingleCrit"
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"1.0"
-	"wave"		"weapons/garand_shoot_crit.wav"
-}
-
-"Weapon_Garand.ReloadStart"
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_74dB"
-	"volume"	".5"
-	"wave"		"weapons/grnd_reload_ping.wav"
-}
-
-"Weapon_Garand.Cock_Back"
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_74dB"
-	"volume"	".5"
-	"wave"		"weapons/grnd_cock_back.wav"
-}
-
-"Weapon_Garand.Cock_Forward"
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_74dB"
-	"volume"	".5"
-	"wave"		"weapons/grnd_cock_forward.wav"
-}
-
-// ------------------------------------------------------------------------------------ //
 // Hunting Shotgun
 // ------------------------------------------------------------------------------------ //
 
@@ -36256,29 +36213,6 @@
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"		"1.0"
 	"wave"			")weapons/aa12_shoot_crit.wav"
-}
-
-// ------------------------------------------------------------------------------------ //
-// Glock 17
-// ------------------------------------------------------------------------------------ //
-
-"Weapon_Glock.Single"
-{
-	"channel"		"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"		"1.0"
-	"pitch"		"95, 100"
-	
-	"wave"			")weapons/glock_fire.wav"
-}
-"Weapon_Glock.SingleCrit"
-{
-	"channel"		"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"		"1.0"
-	"pitch"		"95, 100"
-
-	"wave"			")weapons/glock_fire_crit.wav"
 }
 
 // ------------------------------------------------------------------------------------ //
