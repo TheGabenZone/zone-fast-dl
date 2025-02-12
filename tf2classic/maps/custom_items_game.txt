@@ -13,7 +13,6 @@
 
 "custom_items_game"
 {
-	
 	"prefabs"
 	{
 		
@@ -4975,7 +4974,12 @@ Weapon by: 'The One Of Wonders'"
 			    "heal on hit for rapidfire"
 				{
 					"attribute_class"	"add_onhit_addhealth"
-					"value"				"3"
+					"value"				"5"
+				}
+				"heal on kill"
+				{
+					"attribute_class"	"heal_on_kill"
+					"value"				"25"
 				}
 				"fire rate bonus"
 				{
@@ -12315,11 +12319,6 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"display_only"
 					"value"				"0.8"
 				}
-				"mod horizontal spread"
-				{
-					"attribute_class"	"mod_horizontal_spread"
-					"value"				"1"
-				}
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
@@ -13104,7 +13103,7 @@ Item by: 'Reagy'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"effectbar_recharge_rate"						
-					"value"				"0.733333333"
+					"value"				"0.5"
 				}
 				"custom lunchbox throwable model"
 				{
@@ -13566,6 +13565,11 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"gain_stored_crits_on_kill"
 					"value"				"1"
 				}	
+				"effect bar recharge rate increased"
+		        {
+			        "attribute_class"	"effectbar_recharge_rate"
+			        "value"				"0.75"
+		        }
 				"dmg bonus vs buildings"
 				{
 					"attribute_class"	"mult_dmg_vs_buildings"
@@ -15486,6 +15490,11 @@ Weapon by: 'Majro'"
 					"attribute_class"	"mod_tranq_onhit"
 					"value"				"1.5"
 				}
+				"effect bar recharge rate increased"
+		        {
+			        "attribute_class"	"effectbar_recharge_rate"
+			        "value"				"0.75"
+		        }
 					
 				"hidden secondary max ammo penalty"				//"damage penalty"
 				{
@@ -24703,6 +24712,11 @@ Weapon by: 'The One Of Wonders'"
 				}
 				"weapon_stattrak_module_scale"
 				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.65" 
+				}
+				"weapon_stattrak_module_scale"
+				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"1.77777777777777" 
 				}
@@ -24810,7 +24824,7 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
-					"value"				"45.0" 
+					"value"				"42.0" 
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -31066,7 +31080,7 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
-			    	"value"				"0.8"
+			    	"value"				"1.35"
 				}
 				"longer damage falloff distance"
 				{
@@ -36368,16 +36382,6 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"health_kits_can_overheal_wearer"
 					"value"				"1"
 				}
-				"health from packs increased on active"													
-				{
-					"attribute_class"	"mult_health_frompacks_active"
-					"value"				"2.0"
-				}
-				"health from packs decreased"													
-				{
-					"attribute_class"	"mult_health_frompacks"
-					"value"				"0.5"
-				}
 				"patient overheal penalty"		
 				{
 					"attribute_class"	"mult_patient_overheal_penalty"
@@ -38197,6 +38201,729 @@ Weapon by: 'Reagy'"
 // Knockout.chat Custom Weapons Old
 // ------------------------------- //
 
+		"20000"
+		{
+			"name"						"TF_WEAPON_LEVER_RIFLE"
+			"prefab"					"weapon_scattergun"
+			"show_in_armory"			"1"
+
+			"propername"				"1"
+			"item_quality"				"rarity3"
+			"item_name"					"The Lever Rifle"
+			"item_type_name"			"#TF_Weapon_Scattergun"
+			"item_description"			"
+Old, reliable, and real good at killin' a buncha dopes - what else could ya want?
+
+Model by: 'DanielAwesomo'
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"leverrifle"
+			"item_iconname"				"leverrifle"
+			"image_inventory"			"backpack/weapons/w_models/w_leverrifle"
+			"model_world"				"models/weapons/w_models/w_leverrifle.mdl"				// This gun is apparently a mish-mash of 4 entirely separate Shotguns / Scatterguns, but yet somehow looks distinct from all of them??
+			"model_player"				"models/weapons/v_models/v_leverrifle_scout.mdl"		// For reference: Lever Rifle, V_Shotgun, Baby-Face's Blaster, Frontier Justice
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 			"2.1"
+				}
+				"Reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value" 			"0.9"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.67"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"2.25"
+				}
+				"bullets per shot penalty"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"				"0.5"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		 "Weapon_LeverRifle.Single"
+				"sound_burst"			 "Weapon_LeverRifle.SingleCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+//-------------------------------------
+//-------------------------------------
+// MAC10
+//-------------------------------------
+//-------------------------------------		
+		"20001"
+		{
+			"name"						"TF_WEAPON_MAC"
+			"prefab"					"weapon_pistol"
+			"item_class"				"tf_weapon_revolver"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+			"anim_slot"					"secondary"
+
+			"item_quality"				"rarity3"
+
+			"propername"				"1"
+			"item_name"					"Ghetto Blaster"
+			"item_type_name"			"Compact Sub Gun yo"
+			"item_description"			"Shares ammo with secondaries
+
+You want some cheese with that?
+
+Model by: 'Greg' 'BE NICE 2 ME' 'Colteh'
+Weapon by: 'Reagy'"
+			"item_logname"				"ghetto_blaster"
+			"item_iconname"				"mac_smg"
+			"image_inventory"			"backpack/weapons/w_models/w_mac_smg"
+			"model_world"				"models/weapons/custom/c_models/c_mac.mdl"
+			"model_player"				"models/weapons/custom/c_models/c_mac.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"																	
+			{
+				"class select override vcd"				"class_select_nailgun"					
+				"fire rate bonus hidden"				"0.2"								
+				"reload time increased hidden"			"0.9"								
+			}
+			"attributes"																	
+			{
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"4.0"
+				}
+				"maxammo secondary increased"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"				"5.21"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.5"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.40"
+				}
+			}
+			"visuals"
+			{
+				"muzzle_flash"			"muzzle_scattergun"
+				"tracer_effect"			"bullet_scattergun_tracer01"
+				"sound_single_shot"		"Weapon_SMG_DM.Single"
+				"sound_burst"			"Weapon_SMG_DM.SingleCrit"
+				"sound_reload"			"Weapon_Pistol.WorldReload"
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+//-------------------------------------
+//-------------------------------------
+// OVERUNDER SLUGGER
+//-------------------------------------
+//-------------------------------------	
+		"20002"
+		{
+			"name"						"TF_WEAPON_OVERUNDER"
+			"prefab"					"weapon_scattergun"
+			"show_in_armory"			"1"
+			"anim_slot"					"primary"
+
+			"item_quality"				"rarity3"
+
+			"propername"				"1"
+			"item_name"					"Overunder Slugger"
+			"item_type_name"			"Break-Action Over Under Slug Shotgun"
+			"item_description"			"
+Alright slugger?
+
+Model by: 'danaw167'
+Weapon by: 'Reagy'"
+			"item_logname"				"overunder"
+			"item_iconname"				"overunder"
+			"image_inventory"			"backpack/weapons/w_models/w_overunder"
+			"model_world"				"models/weapons/custom/w_models/w_overunder.mdl"
+			"model_player"				"models/weapons/custom/v_models/v_overunder.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				"reload time increased hidden"			"2.2666"
+				"damage bonus hidden"					"7.8"
+			}
+			"attributes"
+			{
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value" 			"1"
+				}	
+				"explosive bullets"
+				{
+					"attribute_class"	"explosive_bullets"
+					"value"				"1"
+				}			
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" 			"0.6"
+				}
+				"rocket jump damage reduction"
+				{
+					"attribute_class"	"rocket_jump_dmg_reduction"
+					"value"				"0.4"
+				}	
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"Projectile range decreased"
+				{
+					"attribute_class"	"mult_projectile_range"
+					"value"				"0.10"
+				}			
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.5"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" 			"0.30"
+				}
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"				"0.1"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Scatter_Gun_Double.Single"
+				"sound_burst"			"Weapon_Scatter_Gun_Double.SingleCrit"
+				"sound_reload"			"Weapon_DoubleBarrel.WorldReload"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		"20003"
+		{
+			"name"						"TF_WEAPON_COMBATSMG"
+			"prefab"					"weapon_pistol"
+			"item_class"				"tf_weapon_smg"
+			"show_in_armory"			"1"
+			"anim_slot"					"ITEM2"
+
+			"propername"				"1"
+			"item_quality"				"rarity3"
+			"item_name"					"The Miami Heat"										// This is actually a returning weapon! When I was making the OF Map Ports - I was toying with the idea of having each map filled with all of the OF weapons, remade.
+			"item_type_name"			"#TF_Weapon_SMG"										// As you can imagine, that didn't pan out, so I ended up binning that save for a few returning ones - this one just being the most recent.
+			"item_description"			"
+'Happiness is a warm gun.'
+
+Model from: Open Fortress
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"combat_smg"
+			"item_iconname"				"combat_smg"
+			"image_inventory"			"backpack/weapons/w_models/w_smg_dm"
+			"model_world"				"models/weapons/w_models/w_smg_dm.mdl"
+			"model_player"				"models/weapons/v_models/v_smg_dm.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+//				"sniper"				"1"														// Sorry, Paint.
+				"mercenary"				"1"
+			}
+			"static_attrs"																		// Sorta resembles OF's stats for this weapon - before its removal, anyway!
+			{
+				"clip size penalty hidden"				"1.4"
+				"hidden secondary max ammo penalty"		"0.94"									// 0.93 for 2 clips reserve, 1.4 for 3 clips reserve (3 & 4 total respectively)
+				"damage bonus hidden"					"1.25"
+				"fire rate penalty hidden"				"0.8"
+				"reload time increased hidden"			"1.46"
+			}
+			"attributes"
+			{
+				"clip size bonus"
+				{
+					"attribute_class"	"strange_restriction_type_1"
+					"value"				"1.4"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"strange_restriction_type_2"
+					"value"				"0.15"
+				}
+				"reload time increased"
+				{
+					"attribute_class"	"strange_restriction_type_3"
+					"value"				"1.5"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"3.5"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_SMG_DM.Single"
+				"sound_burst"			"Weapon_SMG_DM.SingleCrit"
+				"sound_reload"			"Weapon_SMG.WorldReload"
+				"animation_replacement"
+				{
+					//The Attacking Animations
+					"ACT_MP_ATTACK_STAND_ITEM2"					"ACT_MP_ATTACK_CROUCH_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_ITEM2"				"ACT_MP_ATTACK_CROUCH_SECONDARY"
+					"ACT_MP_ATTACK_SWIM_ITEM2"					"ACT_MP_ATTACK_CROUCH_SECONDARY"
+
+					"ACT_MP_RELOAD_STAND_ITEM2"					"ACT_MP_RELOAD_STAND_SECONDARY"
+					"ACT_MP_RELOAD_CROUCH_ITEM2"				"ACT_MP_RELOAD_CROUCH_SECONDARY"
+					"ACT_MP_RELOAD_SWIM_ITEM2"					"ACT_MP_RELOAD_SWIM_SECONDARY"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		
+		"20004"
+		{
+			"name"						"The Covert Contrarian"
+			"prefab"					"weapon_pistol"
+			"show_in_armory"			"1"
+			
+			"item_quality"				"rarity3"
+			
+
+			"propername"				"1"
+			"item_name"					"Covert Contrarian"
+			"item_type_name"			"#TF_Weapon_Pistol"
+			"item_description"			"
+Slow and steady now...
+
+Model by: 'Norman3D' 'Greg' 'BE NICE 2 ME'
+Weapon from: Tangerine Paint and Grunt's Weapon Addons"
+			"item_logname"				"suppressed_suppressor"
+			"item_iconname"				"suppressed_suppressor"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"image_inventory"			"backpack/weapons/w_models/w_suppressed_suppressor"
+			"model_world"				"models/weapons/w_models/w_suppressed_suppressor.mdl"
+			"model_player"				"models/weapons/v_models/v_suppressed_suppressor_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"				"1"
+			}
+			"attributes"
+			{
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value" 		"1"
+				}
+//				"max health additive bonus"
+//				{
+//					"attribute_class"	"add_maxhealth"
+//					"value" 			"30"
+//				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.30" 
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"2"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"0.75"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.67"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"2.40"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Suppressed_Pistol.Single"
+				"sound_burst"			"Weapon_Suppressed_Pistol.SingleCrit"
+				"tracer_effect"			"bullet_scattergun_tracer01"
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		
+		"20006"	
+		{
+			"name"						"TF_WEAPON_CHAIR_SCOUT"
+			"prefab"					"weapon_bat"
+			"show_in_armory"			"1"
+
+			"item_quality"				"rarity2"
+
+			"propername"				"1"
+			"item_name"					"Smackdown"
+			"item_type_name"			"Steel Chair"
+			"item_description"			"Increased melee range
+
+BAH GOD, ITS SCOUT WITH A STEEL CHAIR!
+
+Model by: Random WWE Game /shrug
+Weapon by: 'Reagy'"
+			"item_logname"				"chair_scout"
+			"item_iconname"				"chair"	
+			"image_inventory"			"backpack/weapons/w_models/w_chair"
+			"model_world"				"models/weapons/custom/w_models/w_chair_scout.mdl"
+			"model_player"				"models/weapons/custom/v_models/v_chair_scout.mdl"
+			"extra_wearable"			"models/player/items/custom/scout/buffout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"	
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"5 0 -10"
+			}
+			"attributes"
+			{
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value" 			"1"
+				}
+				"melee bounds multiplier"
+				{
+					"attribute_class"	"melee_bounds_multiplier"
+					"value" 			"2"
+				}
+				"melee range multiplier"
+				{
+					"attribute_class"	"melee_range_multiplier"
+					"value" 			"2"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.5"
+				}
+				"view punch on hit"																	
+				{
+					"attribute_class"	"add_viewpunch_onhit"
+					"value"				"1"
+				}
+				"tranq on hit"
+				{
+					"attribute_class"	"mod_tranq_onhit"
+					"value"				"2.0"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"0.7"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"				"1"
+					"headphones"		"1"
+				}
+				"sound_melee_miss"		"Weapon_Chair.Miss"
+				"sound_melee_hit"		"Weapon_Chair.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Chair.HitWorld"
+				"sound_burst"			"Weapon_Chair.MissCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		
+		"20007"
+		{
+			"name"						"The Massachusetts Marauder"
+			"prefab"					"weapon_bat"
+			"show_in_armory"			"1"
+			
+			"item_quality"				"rarity3"
+			
+			"item_logname"				"scout_machete"
+			"item_iconname"				"scout_machete"	
+			"propername"				"1"
+			"item_name"					"Boston Brutalizer"
+			"item_type_name"			"Machete"
+			"image_inventory"			"backpack/weapons/w_models/w_scout_machete"
+			"item_description"			"This weapon has increased range
+
+Why yes, I do like hurting chuckheads.
+
+Weapon from: Tangerine Paint and Grunt's Weapon Addons"
+			"model_world"				"models/weapons/w_models/w_scout_machete.mdl"
+			"model_player"				"models/weapons/v_models/v_scout_machete.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"			"1"
+			}
+			"static_attrs"
+			{
+//				"fire rate penalty hidden"				"1.6"
+				"melee range multiplier"				"1.7"
+				"melee bounds multiplier"				"1.55"
+			}
+			"attributes"
+			{
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value" 			"1"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 				"2.33"
+				}
+				"self mark for death"
+				{
+					"attribute_class"	"self_mark_for_death"
+					"value"				"1"
+				}
+				"dmg taken increased"
+				{
+					"attribute_class"	"mult_dmgtaken"
+					"value" 				"1.1"
+				}
+				"fire rate penalty"				
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" 				"1.6"
+				}
+//				"mark self on miss"
+//				{
+//					"attribute_class"	"self_mark_for_death_on_miss"
+//					"value"				"3.0"
+//				}
+			}
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_Knife.Miss"
+				"sound_melee_hit"		"Weapon_Club.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Club.HitWorld"
+				"sound_burst"			"Weapon_Knife.MissCrit"
+			}
+		}
+		
+		"20008"
+		{
+			"name"						"The Firestarter"
+			"prefab"					"weapon_bat"
+			"show_in_armory"			"1"
+			
+			"item_quality"				"rarity3"
+			
+			"item_class"				"tf_weapon_wrench"
+			"propername"				"1"
+			"item_name"					"Firestarter"
+			"item_type_name"			"Torch"
+			"item_description"			"Afterburn deals no damage
+
+Look ma, I'm playin' with fire!
+
+Weapon from: Tangerine Paint and Grunt's Weapon Addons"
+			"item_logname"				"scout_torch"
+			"item_iconname"				"scout_torch"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"104"
+			"image_inventory"			"backpack/weapons/w_models/w_torch"
+			"model_world"				"models/weapons/w_models/w_torch.mdl"
+			"model_player"				"models/weapons/v_models/v_torch_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"				"1"
+			}
+			"static_attrs"
+			{
+//				"fire rate penalty hidden"				"0.625"
+				"damage bonus hidden"					"0.40385"
+			}
+			"attributes"
+			{
+				"damage applies to sappers"												
+				{
+					"attribute_class"	"set_dmg_apply_to_sapper"
+					"value"				"1"
+				}
+				"dmg bonus vs buildings"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"				"1.75"
+				}
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" 			"1"
+				}
+				"crit vs burning players"
+				{
+					"attribute_class"	"or_crit_vs_playercond"
+					"value"				"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				"0.75"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"1.6"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				// Backend stuff
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_repair_value"
+					"value"				"0.00"										
+				}
+				"damage force increase hidden"	
+				{
+					"attribute_class"	"mult_construction_value"
+					"value"				"0"
+				}
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_wpn_burndmg"
+					"value" 			"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_Crowbar.Miss"
+				"sound_melee_hit"		"Weapon_Bottle.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Crowbar_HL1.HitWorld"
+				"sound_burst"			"Weapon_Crowbar.MissCrit"
+				"sound_special1"		"Weapon_Bottle.HitWorld"								
+				"sound_single_shot"		"Weapon_Bottle.HitFlesh"
+				"sound_single_shot_npc"	"Weapon_Crowbar_HL1.HitWorld"
+				"sound_double_shot"		"Weapon_Knife.HitFlesh"
+				"sound_double_shot_npc"	"Weapon_Crowbar_HL1.HitWorld"
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		
+		"20009"
+		{
+			"name"					"TF_WEAPON_WHACKTUS"	// My personal favorite. I dont know why I love the look of this weapon so much.
+			"item_prefab"				"weapon_bat"
+			"item_class"				"tf_weapon_bat"
+			"item_quality"				"rarity3"
+			"show_in_armory"			"1"
+			"item_slot"					"melee"
+			"anim_slot"					"melee"
+			"propername"				"1"
+			"item_name"					"Whacktus"
+			"item_type_name"				"Cactus Bat"
+//Break//
+"item_description"			
+"'Those thorns arent coming out.'
+  
+Model by: 'Rapoza Dynamica'
+Weapon from: Fred's Fight Starters"
+//Break//
+			"item_logname"				"whacktus"
+			"item_iconname"				"whacktus"
+			"image_inventory"				"backpack/whacktus/whacktus.vtf"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"				"models/weapons/c_models/c_whacktus/w_whacktus.mdl"
+			"model_player"				"models/weapons/c_models/c_whacktus/v_model/v_whacktus.mdl"
+			"attach_to_hands"				"2"
+			"used_by_classes"
+			{
+				"scout"				"2"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"bleeding duration"
+				{
+					"attribute_class"	"bleeding_duration"
+					"value"				"5"
+				}
+				"mark self on miss"
+				{
+					"attribute_class"	"self_mark_for_death_on_miss"
+					"value"				"5"
+				}
+			}
+			"visuals"
+			{
+			}
+			"mouse_pressed_sound"			"#ui/item_sandwich_drop.wav"
+			"drop_sound"				"#ui/item_sandwich_pickup.wav"
+		}
 
 // ------------------------------- //
 // Misc Weapons!
@@ -43975,7 +44702,7 @@ In Slam Fire: +60% fire rate and infinite clip"
 		"32021" 
 		{
 			"name"					"MISTEP"
-			"description_string"	"Alt-Fire: Vanish instantly and move with great speeds! (15 sec cooldown)"
+			"description_string"	"Alt-Fire: Vanish instantly and move with great speeds! (12 sec cooldown)"
 			"attribute_type"		"string"													
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"	

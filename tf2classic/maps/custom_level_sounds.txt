@@ -299,7 +299,6 @@
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	"1.0"
 	"wave"		")weapons/bat_baseball_hit_flesh.wav"
-
 }
 
 "Weapon_BaseballBat.HitWorld"
@@ -41547,4 +41546,42 @@
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
 	"wave"		")weapons/vladislavia_spin_down.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// LEVER RIFLE II
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_LeverRifle.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"1.0"
+	"wave"			")weapons/lever_shoot.wav"
+}
+"Weapon_LeverRifle.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"1.0"
+	"wave"			")weapons/lever_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// GHETTO BLASTER
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_SMG_DM.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"1.0"
+	"wave"			")weapons/smg_dm_shoot.wav"
+}
+"Weapon_SMG_DM.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"1.0"
+	"wave"			")weapons/smg_dm_shoot_crit.wav"
 }
