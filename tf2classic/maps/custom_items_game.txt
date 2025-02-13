@@ -18286,7 +18286,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class" 		"custom_projectile_model"
 					"value"					"models/weapons/w_models/w_bfg_projectile2.mdl"
 				}
-				"strange restriction type 1"
+				"Civ Spell Display"
 				{
 					"attribute_class" 		"custom_civ_spells"
 					"value"					"1"
@@ -40827,6 +40827,16 @@ In Slam Fire: +25% fire rate and infinite clip"
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"	
 			"effect_type"			"negative"
+		}
+		
+		"32010" // Civ Spells
+		{
+			"name"					"Civ Spell Display"
+			"description_string"	"Civ Spells are active!"
+			"attribute_type"		"string"													
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"	
+			"effect_type"			"positive"
 		}
 	}
 }
