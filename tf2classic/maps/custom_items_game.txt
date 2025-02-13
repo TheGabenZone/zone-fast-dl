@@ -18319,7 +18319,7 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value"				"0.6666666666667"
+					"value"				"0.01"
 				}
 				"mod use custom ammo type"
 				{
