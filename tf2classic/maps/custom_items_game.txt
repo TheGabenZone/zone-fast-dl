@@ -647,6 +647,11 @@
 					"attribute_class"	"set_charge_type"
 					"value"				"1"
 				}
+				"overheal decay bonus"
+				{
+					"attribute_class"	"mult_medigun_overheal_decay"
+					"value"				"2"
+				}
 				"ubercharge rate bonus"
 				{
 					"attribute_class"	"mult_medigun_uberchargerate"
