@@ -650,7 +650,7 @@
 				"overheal decay bonus"
 				{
 					"attribute_class"	"mult_medigun_overheal_decay"
-					"value"				"0"
+					"value"				"2"
 				}
 				"ubercharge rate bonus"
 				{
