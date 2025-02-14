@@ -26255,7 +26255,7 @@ Weapon by: 'The One Of Wonders'"
 				"overheal decay bonus"
 				{
 					"attribute_class"	"mult_medigun_overheal_decay"
-					"value"				"2.5"
+					"value"				"4"
 				}
 				"ubercharge rate bonus"
 				{
