@@ -302,7 +302,7 @@
 				"alt fire throws prop"
 				{
 					"attribute_class"	"prop_throw"
-					"value"				"33 1500 100 models/props_2fort/cow001_reference.mdl"
+					"value"				"brick 1500 100 models/props_2fort/cow001_reference.mdl"
 				}
 				"crit mod disabled"
 				{
