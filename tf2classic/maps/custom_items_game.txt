@@ -299,6 +299,11 @@
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.85"
 				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"brick_throw"
+					"value"				"3000 10"
+				}
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
