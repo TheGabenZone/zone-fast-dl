@@ -475,8 +475,8 @@
 			{
 				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"enemy_health_dmg_modifier"
-					"value"				"1.25"
+					"attribute_class"	"self_max_health_dmg_modifier"
+					"value"				"0.5"
 				}
 				"crit mod disabled"
 				{
