@@ -294,6 +294,11 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"drain_uber"
+					"value"				"25"
+				}
 			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
@@ -651,11 +656,6 @@
 				{
 					"attribute_class"	"set_charge_type"
 					"value"				"1"
-				}
-				"overheal decay bonus"
-				{
-					"attribute_class"	"mult_medigun_overheal_decay"
-					"value"				"0.1"
 				}
 				"ubercharge rate bonus"
 				{
