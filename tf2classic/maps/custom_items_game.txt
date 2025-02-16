@@ -297,7 +297,7 @@
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"drain_uber"
-					"value"				"25"
+					"value"				"25.0"
 				}
 			    "weapon_stattrak_module_scale"
 				{
