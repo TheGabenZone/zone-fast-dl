@@ -299,10 +299,10 @@
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.85"
 				}
-				"alt fire throws brick"
+				"alt fire throws prop"
 				{
-					"attribute_class"	"brick_throw"
-					"value"				"3000 10"
+					"attribute_class"	"prop_throw"
+					"value"				"3000 models/props_2fort/cow001_reference.mdl"
 				}
 				"crit mod disabled"
 				{
@@ -40854,10 +40854,10 @@ In Slam Fire: +25% fire rate and infinite clip"
 			"effect_type"			"positive"
 		}
 		
-		"32011" // Alt-Fire Brick
+		"32011" // Alt-Fire Prop
 		{
-			"name"					"alt fire throws brick"
-			"description_string"	"Alt-Fire: Throws a fucking brick."
+			"name"					"alt fire throws prop"
+			"description_string"	"Alt-Fire: Throws a fucking custom prop."
 			"attribute_type"		"string"													
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"	
