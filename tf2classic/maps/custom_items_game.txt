@@ -299,7 +299,7 @@
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.85"
 				}
-				"weapon_stattrak_module_scale"
+				"alt fire throws brick"
 				{
 					"attribute_class"	"brick_throw"
 					"value"				"3000 10"
@@ -40848,6 +40848,16 @@ In Slam Fire: +25% fire rate and infinite clip"
 		{
 			"name"					"Civ Spell Display"
 			"description_string"	"Civ Spells are active!"
+			"attribute_type"		"string"													
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"	
+			"effect_type"			"positive"
+		}
+		
+		"32011" // Alt-Fire Brick
+		{
+			"name"					"alt fire throws brick"
+			"description_string"	"Alt-Fire: Throws a fucking brick."
 			"attribute_type"		"string"													
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"	
