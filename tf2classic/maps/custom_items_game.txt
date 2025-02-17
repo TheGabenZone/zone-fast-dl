@@ -582,7 +582,7 @@
 				"custom uber drain"
 				{
 					"attribute_class"	"uber_drain_on_hit"
-					"value"				"2.0"
+					"value"				"0.5"
 				}
 				"crit mod disabled"
 				{
