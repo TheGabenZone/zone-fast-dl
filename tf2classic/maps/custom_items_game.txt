@@ -7135,7 +7135,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_weapon_range"
 					"value" 			"1.3"
 				}
-				"weapon_stattrak_module_scale"
+				"strange restriction type 1"
 				{
 					"attribute_class"	"ubercharge_group_overheal"
 					"value"				"320.0 30.0 1.5 1"
