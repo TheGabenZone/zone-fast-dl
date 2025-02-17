@@ -607,6 +607,11 @@
 					"attribute_class"	"sapper_reprogramming"
 					"value"				"2.0 15.0"
 				}
+				"sapper damage penalty"
+				{
+					"attribute_class"	"mult_sapper_damage"
+					"value"				"0.05"
+				}
 			}
 		}
 		//this needs to be here to add the custom medibeam attribute
