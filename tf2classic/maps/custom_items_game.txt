@@ -463,7 +463,7 @@
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"drain_uber"
-					"value"				"1.0"
+					"value"				"0.5"
 				}
 				"crit mod disabled"
 				{
