@@ -460,11 +460,6 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"uber_drain_on_hit"
-					"value"				"0.75"
-				}
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
@@ -584,6 +579,11 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"uber_drain_on_hit"
+					"value"				"0.75"
+				}
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
