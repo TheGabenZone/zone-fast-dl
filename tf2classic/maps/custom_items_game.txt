@@ -605,8 +605,8 @@
 				"sapper reprogram"
 				{
 					"attribute_class"	"sapper_reprogramming"
-					"value"				"5.0 10.0"
-				}	
+					"value"				"5.0 15.0"
+				}
 			}
 		}
 		//this needs to be here to add the custom medibeam attribute
