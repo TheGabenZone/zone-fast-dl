@@ -7135,7 +7135,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_weapon_range"
 					"value" 			"1.3"
 				}
-				"strange restriction type 1"
+				"ubercharge group overheal"
 				{
 					"attribute_class"	"ubercharge_group_overheal"
 					"value"				"320.0 30.0 1.5 1"
@@ -40891,6 +40891,16 @@ In Slam Fire: +25% fire rate and infinite clip"
 			"attribute_type"		"string"
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"	
+			"effect_type"			"positive"
+		}
+		
+		"32014"
+		{
+			"name"					"ubercharge group overheal"
+			"description_string"	"Ubercharge: Massively overheal all players around you!"
+			"attribute_type"		"string"
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"
 			"effect_type"			"positive"
 		}
 	}
