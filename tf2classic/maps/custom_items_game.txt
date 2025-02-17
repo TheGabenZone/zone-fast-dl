@@ -591,6 +591,24 @@
 				}	
 			}
 		}
+		"31"
+		{
+			"name"						"TF_WEAPON_BUILDER_SPY"
+			"prefab"					"weapon_sapper"
+			"baseitem"					"1"
+			"item_description"			"#TF_Weapon_Spy_Sapper_Desc"
+			"model_world"				"models/weapons/w_models/w_sapper.mdl"
+			"model_player"				"models/weapons/v_models/v_sapper_spy.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"sapper reprogram"
+				{
+					"attribute_class"	"sapper_reprogramming"
+					"value"				"5.0 10.0"
+				}	
+			}
+		}
 		//this needs to be here to add the custom medibeam attribute
 		"32" // First TF2Classic item
 		{
@@ -40898,6 +40916,16 @@ In Slam Fire: +25% fire rate and infinite clip"
 		{
 			"name"					"ubercharge group overheal"
 			"description_string"	"Ubercharge: Massively overheal all players around you!"
+			"attribute_type"		"string"
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"
+			"effect_type"			"positive"
+		}
+		
+		"32015"
+		{
+			"name"					"sapper reprogram"
+			"description_string"	"Allows you to reprogram buildings to your team!"
 			"attribute_type"		"string"
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"
