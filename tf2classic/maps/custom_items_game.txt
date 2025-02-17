@@ -579,7 +579,7 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
-				"weapon_stattrak_module_scale"
+				"custom uber drain"
 				{
 					"attribute_class"	"uber_drain_on_hit"
 					"value"				"2.0"
@@ -40872,7 +40872,17 @@ In Slam Fire: +25% fire rate and infinite clip"
 		"32012" // Slow on Hit?
 		{
 			"name"					"custom slow on hit"
-			"description_string"	"On Hit: Slow victim down by 50%.\nStacks up to 6 seconds."
+			"description_string"	"On Hit: Slow victim down by 50%. Stacks up to 6 seconds."
+			"attribute_type"		"string"
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"	
+			"effect_type"			"positive"
+		}
+		
+		"32013" // Uber Drain
+		{
+			"name"					"custom uber drain"
+			"description_string"	"On Hit: Drain 50% Ubercharge from enemy medics."
 			"attribute_type"		"string"
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"	
