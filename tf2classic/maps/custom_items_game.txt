@@ -7138,7 +7138,7 @@ Weapon by: 'The One Of Wonders'"
 				"ubercharge group overheal"
 				{
 					"attribute_class"	"ubercharge_group_overheal"
-					"value"				"320.0 30.0 1.5 1"
+					"value"				"320.0 30.0 2.5 1"
 				}
 				"heal rate bonus"
 				{
