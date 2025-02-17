@@ -40869,7 +40869,7 @@ In Slam Fire: +25% fire rate and infinite clip"
 			"effect_type"			"positive"
 		}
 		
-		"32011" // Slow on Hit?
+		"32012" // Slow on Hit?
 		{
 			"name"					"custom slow on hit"
 			"description_string"	"On Hit: Slow victim down by 50%.\nStacks up to 6 seconds."
