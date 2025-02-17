@@ -386,6 +386,11 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
+				"custom slow on hit"
+				{
+					"attribute_class"	"weapon_custom_slow"
+					"value"				"0.5 1.0 6.0"
+				}
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
@@ -40859,6 +40864,16 @@ In Slam Fire: +25% fire rate and infinite clip"
 			"name"					"alt fire throws prop"
 			"description_string"	"Alt-Fire: Throws a fucking custom prop."
 			"attribute_type"		"string"													
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"	
+			"effect_type"			"positive"
+		}
+		
+		"32011" // Slow on Hit?
+		{
+			"name"					"custom slow on hit"
+			"description_string"	"On Hit: Slow victim down by 50%.\nStacks up to 6 seconds."
+			"attribute_type"		"string"
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"	
 			"effect_type"			"positive"
