@@ -151,28 +151,6 @@
 				}	
 			}
 		}
-		"5"
-		{
-			"name"						"TF_WEAPON_FISTS"
-			"prefab"					"weapon_fists"
-			"baseitem"					"1"
-			"item_description"			"#TF_Weapon_Fists_Desc"
-			"model_player"				"models/weapons/v_models/v_fist_heavy.mdl"
-			"attach_to_hands"			"2"
-			"attributes"
-			{
-				"taunt on crit"
-				{
-					"attribute_class"	"weapon_taunt_on_crit"
-					"value"				"1.0"
-				}
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value"				"1"
-				}
-			}
-		}
 		"7"
 		{
 			"name"						"TF_WEAPON_WRENCH"
@@ -482,6 +460,11 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
+				"taunt on crit"
+				{
+					"attribute_class"	"weapon_taunt_on_crit"
+					"value"				"1.0"
+				}
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
