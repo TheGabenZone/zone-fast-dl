@@ -161,7 +161,7 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
-				"special taunt"
+				"taunt on crit"
 				{
 					"attribute_class"	"weapon_taunt_on_crit"
 					"value"				"1.0"
@@ -40968,6 +40968,16 @@ In Slam Fire: +25% fire rate and infinite clip"
 		{
 			"name"					"uber banner"
 			"description_string"	"UBER BANNER YEAHHHHH!!!!"
+			"attribute_type"		"string"
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"
+			"effect_type"			"positive"
+		}
+		
+		"32017"
+		{
+			"name"					"taunt on crit"
+			"description_string"	"Taunt on Crit!"
 			"attribute_type"		"string"
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"
