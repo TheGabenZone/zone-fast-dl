@@ -31982,7 +31982,7 @@ Weapon by: 'The One Of Wonders'"
 				"uber banner"												
 				{
 					"attribute_class"	"is_banner"
-					"value"				"52 450 10.0"
+					"value"				"52 450 10.0 480.0"
 				}
 			    "single wep deploy time decreased"												
 				{
