@@ -27431,6 +27431,11 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
+				"has charge"
+				{
+					"attribute_class"	"demoknight_charge"
+					"value"				"2.0 65.0 12.0"
+				}
 			    "damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
@@ -40976,6 +40981,16 @@ In Slam Fire: +25% fire rate and infinite clip"
 		{
 			"name"					"weapon always gib"
 			"description_string"	"Weapon always gibs!"
+			"attribute_type"		"string"
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"
+			"effect_type"			"positive"
+		}
+		
+		"32019"
+		{
+			"name"					"has charge"
+			"description_string"	"Weapon allows charging!"
 			"attribute_type"		"string"
 			"description_format"	"value_is_additive"
 			"custom_color"			"225 215 0 255"
