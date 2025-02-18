@@ -417,7 +417,7 @@
 				"weapon always gib"
 				{
 					"attribute_class"	"weapon_gib_effect"
-					"value"				"1"
+					"value"				"1.0"
 				}
 			    "no damage falloff over distance"
 				{
